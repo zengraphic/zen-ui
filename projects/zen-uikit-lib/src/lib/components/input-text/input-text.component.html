@@ -1,0 +1,29 @@
+<div class="zen-input zen-input-text"
+     [class.zen-input--validate-on-blur]="validateOnBlur"
+     [class.zen-input--focused]="isFocused"
+     [class.zen-input-text--hidden]="type === 'hidden'"
+     [class.zen-input-text--disabled]="disabled"
+>
+  <input class="zen-input__input {{additionalClass ? additionalClass : ''}}"
+         [type]="inferredType"
+         [id]="id"
+         [disabled]="disabled"
+         [class.zen-input__input--filled]="isFilled"
+         [attr.aria-label]="ariaLabel ? ariaLabel : null"
+         [attr.placeholder]="placeholder ? placeholder : null"
+         [attr.maxlength]="maxLength ? maxLength : null"
+         (blur)="onBlur(value)"
+         (keyup)="onKeyup(value)"
+         (focus)="onFocus(value)"
+         [(ngModel)]="value"
+         #inputText
+  />
+  <label class="zen-input__label"
+         *ngIf="label"
+         [for]="id"
+         [innerHTML]="label"
+  ></label>
+  <div class="zen-input__error" *ngIf="isInvalid && (!validateOnBlur || !isFocused)">
+    {{errorMessage}}
+  </div>
+</div>
