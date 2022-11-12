@@ -13,6 +13,7 @@
     "doc:generate": "npx compodoc -p tsconfig.json projects/zen-uikit-lib/src",
     "doc:serve": "lite-server --babseDir=\"documentation\"",
     "doc": "yarn doc:generate && yarn doc:serve",
+    "doc:pages": "./node_modules/.bin/compodoc -p tsconfig.json projects/zen-uikit-lib/src",
     "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
     "storybook": "ng run zen-uikit-lib:storybook",
     "build-storybook": "ng run zen-uikit-lib:build-storybook"
