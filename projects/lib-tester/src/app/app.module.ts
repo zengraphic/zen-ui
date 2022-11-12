@@ -1,4 +1,5 @@
-import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ZenUikitLibModule } from '../../../zen-uikit-lib/src/lib/zen-uikit-lib.module';
 
@@ -10,9 +11,11 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     ZenUikitLibModule,
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

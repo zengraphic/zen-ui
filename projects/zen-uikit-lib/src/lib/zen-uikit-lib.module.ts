@@ -7,7 +7,7 @@ import { PortalModule } from '@angular/cdk/portal';
 
 
 const components = [
-  InputTextComponent,
+  InputTextComponent
 ]
 @NgModule({
   declarations: [

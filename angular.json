@@ -37,6 +37,22 @@
             "tsConfig": "projects/zen-uikit-lib/tsconfig.spec.json",
             "karmaConfig": "projects/zen-uikit-lib/karma.conf.js"
           }
+        },
+        "storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "zen-uikit-lib:build",
+            "port": 6006,
+            "styles": [
+              "projects/zen-uikit-lib/src/styles/zen-uikit-lib.min.css"
+          ]
+          }
+        },
+        "build-storybook": {
+          "builder": "@storybook/angular:build-storybook",
+          "options": {
+            "browserTarget": "zen-uikit-lib:build"
+          }
         }
       }
     },

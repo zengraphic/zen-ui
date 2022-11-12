@@ -1,0 +1,86 @@
+.zen-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    thead, tfoot {
+        background: $primary;
+        box-shadow: 5px 5px 15px 5px rgba($color: $grey--dark, $alpha: 0), 0px 10px 13px -7px $grey--dark;
+        color: $grey--light;
+        display: flex;
+        margin-bottom: 15px;
+    }
+    &_cell,
+    &_header-cell {
+        padding: 0;
+        flex: 1;
+        &:first-of-type {
+            padding-left: 15px;
+        }
+    }
+    &_row{
+        display: flex;
+        align-items: center;
+        height: 48px;
+        background: $grey--light;
+        margin-bottom: 15px;
+        width: 100%;
+        transition: all 250 ease-in-out;
+        &--header {
+          display: flex;
+          align-items: center;
+          height: 56px;
+          width: 100%;
+        }
+        &:last-child {
+            .zen-table_cell {
+                border-bottom: 0;
+            }
+        }
+        &:hover {
+            //background: darken($color:$grey--light, $amount: 20);
+            transition: all 250 ease-in-out;
+            box-shadow: 5px 5px 15px 5px rgba($color: $grey--dark, $alpha: 0), 0px 10px 13px -7px rgba($color: $grey--dark, $alpha: 0.5);
+        }
+        &.isClickable {
+            cursor: pointer;
+        }
+    }
+    
+tr.example-detail-row {
+    height: 0;
+  }
+  
+  .example-element-row td {
+    border-bottom-width: 0;
+  }
+  
+  .example-element-detail {
+    overflow: hidden;
+    display: flex;
+  }
+  
+  .example-element-diagram {
+    min-width: 80px;
+    border: 2px solid $black;
+    padding: 8px;
+    font-weight: lighter;
+    margin: 8px 0;
+    height: 104px;
+  }
+  
+  .example-element-symbol {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: normal;
+  }
+  
+  .example-element-description {
+    padding: 16px;
+  }
+  
+  .example-element-description-attribution {
+    opacity: 0.5;
+  }
+  
+}

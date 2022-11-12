@@ -1,91 +1,96 @@
 .zen-input {
-    padding: 10px;
-    position: relative;
-  
-    &__label {
-      bottom: 10px; // Calculated based on line-height
-      color: red;
-      display: inline-block;
-      left: 10px;
-      pointer-events: none;
-      position: absolute;
-      transition: all 250 ease-in-out;
-    }
-  
-    &__input {
-      background-color: transparent;
-      border: none;
-      border-bottom: 1px solid blue;
-      border-bottom-color: blue;
-      color: red;
-      outline: none;
-      padding: 15px;
-      width: 100%;
-  
-      &:focus,
-      &--filled,
-      &--placeholder {
-        border-bottom-color: blue;
-        color: red;
-  
-        + .wt-input__label {
-          bottom: 10px; // Calculated based on line-height
-  
-          font-size: 15px !important;
-          line-height: 1 !important;
-        }
-      }
-  
-      &--placeholder {
-        border-bottom-color: blue;
-      }
-  
-      &--filled.wt-input__input--placeholder {
-        border-bottom-color: blue;
-      }
-  
-      &:disabled {
-        background-color: transparent;
-        border-color: gray;
-        color: gray;
-        -webkit-text-fill-color: gray; /* Override iOS / Android font color change */
-        -webkit-opacity: 1; /* Override iOS opacity change affecting text & background color */
-        opacity: 1;
-        pointer-events: none;
-  
-        & + .wt-input__label {
-          color: gray;
-          pointer-events: none;
-        }
-      }
-  
-      &::placeholder {
-        //@extend .wt-text-base-s;
-        color: red;
-      }
-  
-      &:-webkit-autofill,
-      &:-webkit-autofill:hover,
-      &:-webkit-autofill:focus {
-        background-color: transparent !important;
-        background-image: none !important;
-        color: black !important;
-      }
-    }
-  
-    &__error {
-      bottom: 10px;
-      left:15px;
-      position: absolute;
-      white-space: nowrap;
-    }
-    &__reset {
-      cursor: pointer;
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      width: 20px;
-      height: 20px;
-      //background: $theme-inputResetIcon;
+  position: relative;
+  margin-bottom: 15px;
+  &__label {
+    color: $black;
+    display: inline-block;
+    padding: 0 15px;
+    pointer-events: none;
+    font-size: 14px;
+    transition: all 250 ease-in-out;
+    .zen-input--small & {
+      font-size: 12px;
+      padding: 0 12px;
     }
   }
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid $grey--dark;
+    color: $black;
+    outline: none;
+    width: 100%;
+    transition: all 250 ease-in-out;
+    font-size: 16px;
+    height: 56px;
+      padding: 15px;
+    .zen-input--small & {
+      font-size: 14px;
+      height: 36px;
+      padding: 12px;
+    }
+    .zen-input--medium & {
+      height: 40px;
+    }
+    &:focus {
+      border-bottom-color: $primary;
+    }
+    &--filled,
+    &--placeholder {
+      border-bottom-color: $grey--dark;
+      color: $black;
+    }
+
+    &--placeholder {
+      border-bottom-color: $black;
+    }
+
+    &--filled.zen-input__input--placeholder {
+      border-bottom-color: $black;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      border-color: $grey--dark;
+      color: $grey--dark;
+      -webkit-text-fill-color: $grey--dark; /* Override iOS / Android font color change */
+      -webkit-opacity: 1; /* Override iOS opacity change affecting text & background color */
+      opacity: 1;
+      pointer-events: none;
+
+      & + .zen-input__label {
+        color: $error;
+        pointer-events: none;
+      }
+    }
+
+    &::placeholder {
+      //@extend .zen-text-base-s;
+      color: $grey--dark;
+    }
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      background-color: transparent !important;
+      background-image: none !important;
+      color: $black !important;
+    }
+  }
+
+  &__error {
+    bottom: 10px;
+    left: 15px;
+    position: absolute;
+    white-space: nowrap;
+  }
+  &__reset {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 20px;
+    height: 20px;
+    //background: $theme-inputResetIcon;
+  }
+}

@@ -9,7 +9,13 @@
     "sass": "sass projects/zen-uikit-lib/src/styles/zen-uikit-lib.scss:projects/zen-uikit-lib/src/styles/zen-uikit-lib.min.css --style=compressed",
     "build": "yarn sass && node ./scripts/build-libraries.js build --lib zen-uikit-lib",
     "start": "node ./scripts/build-libraries.js start --lib zen-uikit-lib",
-    "start:tester": "ng serve lib-tester"
+    "start:tester": "ng serve lib-tester",
+    "doc:generate": "npx compodoc -p tsconfig.json projects/zen-uikit-lib/src",
+    "doc:serve": "lite-server --babseDir=\"documentation\"",
+    "doc": "yarn doc:generate && yarn doc:serve",
+    "docs:json": "compodoc -p ./tsconfig.json -e json -d .",
+    "storybook": "ng run zen-uikit-lib:storybook",
+    "build-storybook": "ng run zen-uikit-lib:build-storybook"
   },
   "private": true,
   "dependencies": {
@@ -36,7 +42,18 @@
     "@angular-devkit/build-angular": "^14.0.7",
     "@angular/cli": "~14.0.1",
     "@angular/compiler-cli": "^14.0.0",
+    "@babel/core": "^7.20.2",
+    "@compodoc/compodoc": "^1.1.19",
+    "@storybook/addon-actions": "^6.5.13",
+    "@storybook/addon-essentials": "^6.5.13",
+    "@storybook/addon-interactions": "^6.5.13",
+    "@storybook/addon-links": "^6.5.13",
+    "@storybook/angular": "^6.5.13",
+    "@storybook/builder-webpack5": "^6.5.13",
+    "@storybook/manager-webpack5": "^6.5.13",
+    "@storybook/testing-library": "^0.0.13",
     "@types/jasmine": "~4.0.0",
+    "babel-loader": "^8.3.0",
     "cpx": "^1.5.0",
     "jasmine-core": "~4.1.0",
     "karma": "~6.3.0",
@@ -44,11 +61,13 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "lite-server": "^2.6.1",
     "ng-packagr": "^14.0.0",
     "scss-bundle": "^3.1.2",
     "semver": "^7.3.8",
     "shelljs": "^0.8.5",
     "typescript": "~4.7.2",
-    "yargs": "^17.6.0"
+    "yargs": "^17.6.0",
+    "@types/node": "18.7.23"
   }
 }

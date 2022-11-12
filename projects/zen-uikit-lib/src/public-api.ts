@@ -4,6 +4,7 @@
 
 export * from './lib/zen-uikit-lib.module';
 
+//components
 export * from './lib/components/input-text/input-text.component';
 
 // Models

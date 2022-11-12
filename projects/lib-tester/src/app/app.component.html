@@ -1,1 +1,3 @@
-<zen-input-text type="text" [disabled]="false" label="pippo" [placeholder]="true"></zen-input-text>
+<div [formGroup]="formGroup">
+    <zen-input-text type="text" [disabled]="true" small formControlName="field1" label="pippo" (keyupChange)="onAction($event)" [placeholder]="true"></zen-input-text>
+</div>
