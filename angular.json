@@ -42,10 +42,7 @@
           "builder": "@storybook/angular:start-storybook",
           "options": {
             "browserTarget": "zen-uikit-lib:build",
-            "port": 6006,
-            "styles": [
-              "projects/zen-uikit-lib/src/styles/zen-uikit-lib.min.css"
-          ]
+            "port": 6006
           }
         },
         "build-storybook": {
@@ -151,6 +148,20 @@
             "styles": [
               "projects/lib-tester/src/styles.scss"
             ],
+            "scripts": []
+          }
+        }
+      }
+    },
+    "storybook": {
+      "projectType": "application",
+      "root": "stories",
+      "sourceRoot": "stories",
+      "architect": {
+        "build": {
+          "options": {
+            "tsConfig": "tsconfig.json",
+            "styles": ["projects/zen-uikit-lib/src/styles/zen-uikit-lib.min.css"],
             "scripts": []
           }
         }

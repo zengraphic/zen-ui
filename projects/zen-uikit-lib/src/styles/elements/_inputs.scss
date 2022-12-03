@@ -1,6 +1,7 @@
 .zen-input {
   position: relative;
-  margin-bottom: 15px;
+  padding-bottom: 20px;
+  margin-bottom: 8px;
   &__label {
     color: $black;
     display: inline-block;
@@ -12,6 +13,9 @@
       font-size: 12px;
       padding: 0 12px;
     }
+    .error & {
+      color: $error;
+    }
   }
   &__input {
     background-color: transparent;
@@ -22,12 +26,12 @@
     width: 100%;
     transition: all 250 ease-in-out;
     font-size: 16px;
-    height: 56px;
-      padding: 15px;
+    height: 48px;
+    padding: 16px;
     .zen-input--small & {
       font-size: 14px;
-      height: 36px;
-      padding: 12px;
+      height: 32px;
+      padding: 8px;
     }
     .zen-input--medium & {
       height: 40px;
@@ -45,6 +49,11 @@
       border-bottom-color: $black;
     }
 
+    .error & {
+      color: $error;
+      border-color: $error;
+    }
+
     &--filled.zen-input__input--placeholder {
       border-bottom-color: $black;
     }
@@ -57,16 +66,14 @@
       -webkit-opacity: 1; /* Override iOS opacity change affecting text & background color */
       opacity: 1;
       pointer-events: none;
-
-      & + .zen-input__label {
-        color: $error;
-        pointer-events: none;
-      }
     }
 
     &::placeholder {
       //@extend .zen-text-base-s;
-      color: $grey--dark;
+      color: $grey--100;
+      .error & {
+        color: $error;
+      }
     }
 
     &:-webkit-autofill,
@@ -79,10 +86,11 @@
   }
 
   &__error {
-    bottom: 10px;
+    bottom: 0;
     left: 15px;
     position: absolute;
     white-space: nowrap;
+    color: $error;
   }
   &__reset {
     cursor: pointer;

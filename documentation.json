@@ -14,300 +14,7 @@
             "methods": []
         }
     ],
-    "injectables": [
-        {
-            "name": "InputBaseComponent",
-            "id": "injectable-InputBaseComponent-eafc4ef85be31ce71665d002e47511fd8a099a9082324eb3343b67a93dd0aeac1d5c60aa72bba40f9f6b08a9b99035eb4eb6e8950e3010c646b2cac1e5584027",
-            "file": "projects/zen-uikit-lib/src/lib/components/input-base/input-base.component.ts",
-            "properties": [
-                {
-                    "name": "formControl",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "FormControl | undefined",
-                    "optional": false,
-                    "description": "",
-                    "line": 20,
-                    "modifierKind": [
-                        123
-                    ]
-                },
-                {
-                    "name": "formControlName",
-                    "defaultValue": "''",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string | number | null",
-                    "optional": false,
-                    "description": "",
-                    "line": 21,
-                    "modifierKind": [
-                        123
-                    ]
-                },
-                {
-                    "name": "id",
-                    "defaultValue": "`input_${uuid()}`",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "optional": false,
-                    "description": "",
-                    "line": 19,
-                    "modifierKind": [
-                        123
-                    ]
-                },
-                {
-                    "name": "isFocused",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "boolean",
-                    "optional": false,
-                    "description": "",
-                    "line": 23,
-                    "modifierKind": [
-                        123
-                    ]
-                },
-                {
-                    "name": "ref",
-                    "defaultValue": "{\n    markForCheck: () => {}\n  } as ChangeDetectorRef",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "ChangeDetectorRef | null",
-                    "optional": false,
-                    "description": "",
-                    "line": 27,
-                    "modifierKind": [
-                        122
-                    ]
-                },
-                {
-                    "name": "subscriptions",
-                    "defaultValue": "new Subscription()",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Subscription",
-                    "optional": false,
-                    "description": "",
-                    "line": 25,
-                    "modifierKind": [
-                        121
-                    ]
-                },
-                {
-                    "name": "translateService",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "TranslateService | null | undefined",
-                    "optional": false,
-                    "description": "",
-                    "line": 26,
-                    "modifierKind": [
-                        121
-                    ]
-                }
-            ],
-            "methods": [
-                {
-                    "name": "ngAfterViewInit",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 34,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "ngOnDestroy",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 39,
-                    "deprecated": false,
-                    "deprecationMessage": ""
-                },
-                {
-                    "name": "onBlur",
-                    "args": [
-                        {
-                            "name": "$event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 63,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        123
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "$event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "onFocus",
-                    "args": [
-                        {
-                            "name": "$event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 58,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        123
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "$event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "onKeyup",
-                    "args": [
-                        {
-                            "name": "$event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 54,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        123
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "$event",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "setFormControl",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 82,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        121
-                    ]
-                },
-                {
-                    "name": "setInjectedServices",
-                    "args": [],
-                    "optional": false,
-                    "returnType": "void",
-                    "typeParameters": [],
-                    "line": 72,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        121
-                    ]
-                }
-            ],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "description": "",
-            "rawdescription": "\n",
-            "sourceCode": "import { AfterViewInit, ChangeDetectorRef, EventEmitter, Injectable, Injector, Input, OnDestroy, Output, Type} from '@angular/core';\nimport { FormControl, NgControl } from '@angular/forms';\nimport { TranslateService } from '@ngx-translate/core';\nimport { v4 as uuid } from 'uuid';\nimport { Subscription } from 'rxjs';\n\nimport { INPUT_BASE_ERROR_PREFIX } from '../../models/input.model';\n\n@Injectable()\nexport abstract class InputBaseComponent implements AfterViewInit, OnDestroy {\n  @Input() label: string = '';\n  @Input() ariaLabel: string = '';\n  @Input() maxLength: number = 10;\n  @Input() validateOnBlur: boolean = false;\n  @Output() keyupChange: EventEmitter<any> = new EventEmitter();\n  @Output() onFocusError: EventEmitter<any> = new EventEmitter();\n  @Output() onBlurError: EventEmitter<any> = new EventEmitter();\n\n  public id = `input_${uuid()}`;\n  public formControl: FormControl | undefined;\n  public formControlName: string | number | null = '';\n\n  public isFocused: boolean = false;\n\n  private subscriptions: Subscription = new Subscription();\n  private translateService: TranslateService | null | undefined;\n  protected ref: ChangeDetectorRef | null = {\n    markForCheck: () => {}\n  } as ChangeDetectorRef;\n\n  protected constructor(protected injector: Injector) {\n  }\n\n  ngAfterViewInit() {\n    this.setFormControl();\n    this.setInjectedServices();\n  }\n\n  ngOnDestroy() {\n    this.subscriptions.unsubscribe();\n  }\n\n  get errorMessage(): string {\n    const [firstErrorKey] = Object.keys(this.formControl?.errors || {});\n    const errorLabelKey = `${INPUT_BASE_ERROR_PREFIX}${firstErrorKey}`;\n\n    return this.translateService ? this.translateService.instant(errorLabelKey) : errorLabelKey;\n  }\n\n  get isInvalid(): boolean {\n    return Boolean(this.formControl && this.formControl.errors && this.formControl.touched);\n  }\n\n  public onKeyup($event: any) {\n    this.keyupChange.emit($event);\n  }\n\n  public onFocus($event: any) {\n    this.isFocused = true;\n    this.formControl?.updateValueAndValidity();\n  }\n\n  public onBlur($event: any) {\n    if (this.isInvalid) {\n      this.onBlurError.emit({\n        key: this.formControlName,\n        errors: this.formControl?.errors\n      });\n    }\n  }\n\n  private setInjectedServices() {\n    this.translateService = this.injector.get(TranslateService as Type<TranslateService>, null);\n    this.ref = this.injector.get(ChangeDetectorRef as Type<ChangeDetectorRef>, null);\n\n    if (this.ref) {\n      // Detect changes to show pending error (if present)\n      this.ref.detectChanges();\n    }\n  }\n\n  private setFormControl() {\n    const ngControl = this.injector.get(NgControl as Type<NgControl>);\n\n    if (ngControl) {\n      this.formControl = ngControl.control as FormControl;\n      this.formControlName = ngControl.name;\n      this.subscriptions.add(\n        this.formControl.statusChanges.subscribe(() => {\n          this.ref?.markForCheck();\n        })\n      );\n    } else {\n      throw Error('Missing ngControl');\n    }\n  }\n  \n\n}\n",
-            "constructorObj": {
-                "name": "constructor",
-                "description": "",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "args": [
-                    {
-                        "name": "injector",
-                        "type": "Injector",
-                        "deprecated": false,
-                        "deprecationMessage": ""
-                    }
-                ],
-                "line": 29,
-                "modifierKind": [
-                    122
-                ],
-                "jsdoctags": [
-                    {
-                        "name": "injector",
-                        "type": "Injector",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "tagName": {
-                            "text": "param"
-                        }
-                    }
-                ]
-            },
-            "accessors": {
-                "errorMessage": {
-                    "name": "errorMessage",
-                    "getSignature": {
-                        "name": "errorMessage",
-                        "type": "string",
-                        "returnType": "string",
-                        "line": 43
-                    }
-                },
-                "isInvalid": {
-                    "name": "isInvalid",
-                    "getSignature": {
-                        "name": "isInvalid",
-                        "type": "boolean",
-                        "returnType": "boolean",
-                        "line": 50
-                    }
-                }
-            },
-            "type": "injectable"
-        }
-    ],
+    "injectables": [],
     "guards": [],
     "interceptors": [],
     "classes": [],
@@ -315,7 +22,7 @@
     "components": [
         {
             "name": "AppComponent",
-            "id": "component-AppComponent-adae7aaf26719dd7735b4b3c5f3208c855634c4803c9f9c5a1a7f32d21858183d6795b219ea5b1c84fbd38264ee63ec3f778f4bd98e73a0dcdbbb86fc8b04f57",
+            "id": "component-AppComponent-45f9c8c0694fc49fc578c560c0ba4758a288a60f9e8228f7cb1b979adcdf3ed123a05b6548e5c9412a75f2a2a8f9eb30ec6a809ce6e98f011854738122ba5466",
             "file": "projects/lib-tester/src/app/app.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -391,7 +98,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 47,
+                    "line": 49,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -417,7 +124,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder, FormControl, FormGroup } from '@angular/forms';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent implements OnInit {\n  title = 'lib-tester';\n\n  tableData = [\n    {\n      name: 'Hammerer Maccabeus',\n      types: 'Holy/Fire',\n      attack: 1,\n      defense: 1,\n      speed: 1,\n      healing: 1,\n      recovery: 1,\n      health: 5\n    },\n    {\n      name: 'Ethereal Moodmorph',\n      types: 'Water/Fire',\n      attack: 1,\n      defense: 1,\n      speed: 1,\n      healing: 1,\n      recovery: 1,\n      health: 5\n    },\n  ];\n  \n  public formGroup: FormGroup;\n\n  constructor(\n    private formBuilder: FormBuilder\n  ) {}\n\n  ngOnInit(): void {\n    this.formGroup = new FormGroup({\n      field1: new FormControl()\n    })\n  }\n\n  public onAction(event: Event) {\n    console.log(event);\n  }\n}\n",
+            "sourceCode": "import { Component, OnInit } from '@angular/core';\nimport { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent implements OnInit {\n  title = 'lib-tester';\n\n  tableData = [\n    {\n      name: 'Hammerer Maccabeus',\n      types: 'Holy/Fire',\n      attack: 1,\n      defense: 1,\n      speed: 1,\n      healing: 1,\n      recovery: 1,\n      health: 5\n    },\n    {\n      name: 'Ethereal Moodmorph',\n      types: 'Water/Fire',\n      attack: 1,\n      defense: 1,\n      speed: 1,\n      healing: 1,\n      recovery: 1,\n      health: 5\n    },\n  ];\n  \n  public formGroup: FormGroup;\n\n  constructor(\n    private formBuilder: FormBuilder\n  ) {}\n\n  ngOnInit(): void {\n    \n    this.formGroup = this.formBuilder.group({\n      field1: ['',Validators.required],\n      field2: [true, Validators.required]\n    })\n  }\n\n  public onAction(event: Event) {\n    console.log(event);\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -455,38 +162,236 @@
             "implements": [
                 "OnInit"
             ],
-            "templateData": "<div [formGroup]=\"formGroup\">\n    <zen-input-text type=\"text\" [disabled]=\"true\" small formControlName=\"field1\" label=\"pippo\" (keyupChange)=\"onAction($event)\" [placeholder]=\"true\"></zen-input-text>\n</div>"
+            "templateData": "<div [formGroup]=\"formGroup\">\n    <zen-input-text [disabled]=\"false\" formControlName=\"field1\" label=\"pippo\" [additionalClasses]=\"['pippo']\" (keyupChange)=\"onAction($event)\" placeholder=\"place\"></zen-input-text>\n    <zen-input-checkbox [disabled]=\"true\" formControlName=\"field2\">labbel text</zen-input-checkbox>\n</div>"
         },
         {
-            "name": "InputTextComponent",
-            "id": "component-InputTextComponent-576281de5415303fcccbead3e8b6151150704e66cc10e9a322ab619959a1a15ff66e7fab37196cdf48ce7c1237e793d536df958e3ee4e9edec86ac998260ddef",
-            "file": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
-            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "name": "ButtonComponent",
+            "id": "component-ButtonComponent-4ef205c97a334c309aa4001c8ab4a6d9571dcae18d0e85aaf0d367467ab5d3a9f13ab3573726f1fcb409bc9b49894dadfb80b1bbe1b6ba7041455ad9d4922004",
+            "file": "stories/button.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
-            "providers": [
-                {
-                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => InputTextComponent), multi: true\n}",
-                    "type": "component"
-                }
+            "providers": [],
+            "selector": "storybook-button",
+            "styleUrls": [
+                "./button.css"
             ],
-            "selector": "zen-input-text",
-            "styleUrls": [],
             "styles": [],
-            "templateUrl": [
-                "./input-text.component.html"
-            ],
+            "template": "<button   type=\"button\"\n   (click)=\"onClick.emit($event)\"\n   [ngClass]=\"classes\"\n   [ngStyle]=\"{ 'background-color': backgroundColor }\"\n >\n   {{ label }}\n </button>",
+            "templateUrl": [],
             "viewProviders": [],
             "inputsClass": [
                 {
-                    "name": "additionalClass",
+                    "name": "backgroundColor",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nWhat background color to use\n",
+                    "description": "<p>What background color to use</p>\n",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Button'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "pos": 711,
+                            "end": 724,
+                            "flags": 4227072,
+                            "modifierFlagsCache": 0,
+                            "transformFlags": 0,
+                            "kind": 325,
+                            "tagName": {
+                                "pos": 712,
+                                "end": 720,
+                                "flags": 4227072,
+                                "modifierFlagsCache": 0,
+                                "transformFlags": 0,
+                                "kind": 79,
+                                "escapedText": "required"
+                            },
+                            "comment": ""
+                        }
+                    ],
+                    "rawdescription": "\n\nButton contents\n\n",
+                    "description": "<p>Button contents</p>\n",
+                    "line": 40,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "primary",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nIs this the principal call to action on the page?\n",
+                    "description": "<p>Is this the principal call to action on the page?</p>\n",
+                    "line": 20,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nHow large should the button be?\n",
+                    "description": "<p>How large should the button be?</p>\n",
+                    "line": 32,
+                    "type": "\"small\" | \"medium\" | \"large\"",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onClick",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nOptional click handler\n",
+                    "description": "<p>Optional click handler</p>\n",
+                    "line": 46,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\n\n@Component({\n  selector: 'storybook-button',\n  template: ` <button\n    type=\"button\"\n    (click)=\"onClick.emit($event)\"\n    [ngClass]=\"classes\"\n    [ngStyle]=\"{ 'background-color': backgroundColor }\"\n  >\n    {{ label }}\n  </button>`,\n  styleUrls: ['./button.css'],\n})\nexport default class ButtonComponent {\n  /**\n   * Is this the principal call to action on the page?\n   */\n  @Input()\n  primary = false;\n\n  /**\n   * What background color to use\n   */\n  @Input()\n  backgroundColor?: string;\n\n  /**\n   * How large should the button be?\n   */\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  /**\n   * Button contents\n   *\n   * @required\n   */\n  @Input()\n  label = 'Button';\n\n  /**\n   * Optional click handler\n   */\n  @Output()\n  onClick = new EventEmitter<Event>();\n\n  public get classes(): string[] {\n    const mode = this.primary ? 'storybook-button--primary' : 'storybook-button--secondary';\n\n    return ['storybook-button', `storybook-button--${this.size}`, mode];\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".storybook-button {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-weight: 700;\n  border: 0;\n  border-radius: 3em;\n  cursor: pointer;\n  display: inline-block;\n  line-height: 1;\n}\n.storybook-button--primary {\n  color: white;\n  background-color: #1ea7fd;\n}\n.storybook-button--secondary {\n  color: #333;\n  background-color: transparent;\n  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;\n}\n.storybook-button--small {\n  font-size: 12px;\n  padding: 10px 16px;\n}\n.storybook-button--medium {\n  font-size: 14px;\n  padding: 11px 20px;\n}\n.storybook-button--large {\n  font-size: 16px;\n  padding: 12px 24px;\n}\n",
+                    "styleUrl": "./button.css"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 48
+                    }
+                }
+            }
+        },
+        {
+            "name": "HeaderComponent",
+            "id": "component-HeaderComponent-a557eec14f72c438a8033301f4d6ce023e0a1844a3b06ec2b38794a612acc31735ae78a5ee10071b230c8c20d699eb914554e69d07ade54adb371da8efb464cc",
+            "file": "stories/header.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-header",
+            "styleUrls": [
+                "./header.css"
+            ],
+            "styles": [],
+            "template": "<header>    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 65,
+                    "type": "User | null",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "onCreateAccount",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 74,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogin",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 68,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "onLogout",
+                    "defaultValue": "new EventEmitter<Event>()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 71,
+                    "type": "EventEmitter"
+                }
+            ],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component, Input, Output, EventEmitter } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-header',\n  template: `<header>\n    <div class=\"wrapper\">\n      <div>\n        <svg width=\"32\" height=\"32\" viewBox=\"0 0 32 32\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M10 0h12a10 10 0 0110 10v12a10 10 0 01-10 10H10A10 10 0 010 22V10A10 10 0 0110 0z\"\n              fill=\"#FFF\"\n            />\n            <path\n              d=\"M5.3 10.6l10.4 6v11.1l-10.4-6v-11zm11.4-6.2l9.7 5.5-9.7 5.6V4.4z\"\n              fill=\"#555AB9\"\n            />\n            <path\n              d=\"M27.2 10.6v11.2l-10.5 6V16.5l10.5-6zM15.7 4.4v11L6 10l9.7-5.5z\"\n              fill=\"#91BAF8\"\n            />\n          </g>\n        </svg>\n        <h1>Acme</h1>\n      </div>\n      <div>\n        <div *ngIf=\"user\">\n          <span class=\"welcome\">\n            Welcome, <b>{{ user.name }}</b\n            >!\n          </span>\n          <storybook-button\n            *ngIf=\"user\"\n            size=\"small\"\n            (onClick)=\"onLogout.emit($event)\"\n            label=\"Log out\"\n          ></storybook-button>\n        </div>\n        <div *ngIf=\"!user\">\n          <storybook-button\n            *ngIf=\"!user\"\n            size=\"small\"\n            class=\"margin-left\"\n            (onClick)=\"onLogin.emit($event)\"\n            label=\"Log in\"\n          ></storybook-button>\n          <storybook-button\n            *ngIf=\"!user\"\n            primary\n            size=\"small\"\n            primary=\"true\"\n            class=\"margin-left\"\n            (onClick)=\"onCreateAccount.emit($event)\"\n            label=\"Sign up\"\n          ></storybook-button>\n        </div>\n      </div>\n    </div>\n  </header>`,\n  styleUrls: ['./header.css'],\n})\nexport default class HeaderComponent {\n  @Input()\n  user: User | null = null;\n\n  @Output()\n  onLogin = new EventEmitter<Event>();\n\n  @Output()\n  onLogout = new EventEmitter<Event>();\n\n  @Output()\n  onCreateAccount = new EventEmitter<Event>();\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".wrapper {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  border-bottom: 1px solid rgba(0, 0, 0, 0.1);\n  padding: 15px 20px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n}\n\nsvg {\n  display: inline-block;\n  vertical-align: top;\n}\n\nh1 {\n  font-weight: 900;\n  font-size: 20px;\n  line-height: 1;\n  margin: 6px 0 6px 10px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nbutton + button {\n  margin-left: 10px;\n}\n\n.welcome {\n  color: #333;\n  font-size: 14px;\n  margin-right: 10px;\n}\n",
+                    "styleUrl": "./header.css"
+                }
+            ],
+            "stylesData": ""
+        },
+        {
+            "name": "InputBaseComponent",
+            "id": "component-InputBaseComponent-8bfcab28dcff64ea1e4d0bea4abbfe09bcb4bdb86298a3cd6d5927a51d0b8b21b3589ce041a5a34c6fd402c2a8aa031ac48fe6b00f9bf975870f632ccf08004e",
+            "file": "projects/zen-uikit-lib/src/lib/components/input-base/input-base.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "styleUrls": [],
+            "styles": [],
+            "template": "",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "additionalClasses",
                     "defaultValue": "[]",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 21,
+                    "line": 19,
                     "type": "string[]",
+                    "decorators": []
+                },
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
                     "decorators": []
                 },
                 {
@@ -494,59 +399,144 @@
                     "defaultValue": "false",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "line": 18,
+                    "line": 11,
                     "type": "boolean",
                     "decorators": []
                 },
                 {
-                    "name": "placeholder",
-                    "defaultValue": "false",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 19,
-                    "type": "boolean",
-                    "decorators": []
-                },
-                {
-                    "name": "type",
-                    "defaultValue": "'text'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "line": 20,
-                    "type": "string",
-                    "decorators": []
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [
-                {
-                    "name": "cleave",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "any",
-                    "optional": false,
-                    "description": "",
-                    "line": 28,
-                    "modifierKind": [
-                        121
-                    ]
-                },
-                {
-                    "name": "inferredType",
-                    "defaultValue": "'text'",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "string",
-                    "optional": false,
-                    "description": "",
-                    "line": 25
-                },
-                {
-                    "name": "innerValue",
+                    "name": "label",
                     "defaultValue": "''",
                     "deprecated": false,
                     "deprecationMessage": "",
+                    "line": 12,
                     "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "maxLength",
+                    "defaultValue": "-1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "number",
+                    "decorators": []
+                },
+                {
+                    "name": "validateOnBlur",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": []
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "keyupChange",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "EventEmitter<any>"
+                },
+                {
+                    "name": "onBlurError",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter<any>"
+                },
+                {
+                    "name": "onFocusError",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<any>"
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "elementRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "formControl",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FormControl | undefined",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "formControlName",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | number | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "`input_${uuid()}`",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "isFocused",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 25,
+                    "modifierKind": [
+                        123
+                    ]
+                },
+                {
+                    "name": "ref",
+                    "defaultValue": "{\n    markForCheck: () => {}\n  } as ChangeDetectorRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ChangeDetectorRef | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 30,
+                    "modifierKind": [
+                        122
+                    ]
+                },
+                {
+                    "name": "subscriptions",
+                    "defaultValue": "new Subscription()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Subscription",
                     "optional": false,
                     "description": "",
                     "line": 27,
@@ -555,18 +545,384 @@
                     ]
                 },
                 {
-                    "name": "inputElement",
+                    "name": "translateService",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "ElementRef",
-                    "optional": true,
+                    "type": "TranslateService | null | undefined",
+                    "optional": false,
                     "description": "",
-                    "line": 23,
-                    "decorators": [
+                    "line": 28,
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "onBlur",
+                    "args": [
                         {
-                            "name": "ViewChild",
-                            "stringifiedArguments": "'inputText', {static: true}"
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
                         }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onFocus",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 61,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "onKeyup",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setFormControl",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 86,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "setInjectedServices",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 75,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ]
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { AfterViewInit, ChangeDetectorRef, Component, EventEmitter, Injector, Input, OnDestroy, Output, Type, ElementRef } from '@angular/core';\nimport { FormControl, NgControl } from '@angular/forms';\nimport { TranslateService } from '@ngx-translate/core';\nimport { v4 as uuid } from 'uuid';\nimport { Subscription } from 'rxjs';\n\nimport { INPUT_BASE_ERROR_PREFIX } from '../../models/input.model';\n\n@Component({ template: '' })\nexport abstract class InputBaseComponent implements AfterViewInit, OnDestroy {\n  @Input() disabled: boolean = false;\n  @Input() label: string = '';\n  @Input() ariaLabel: string = '';\n  @Input() maxLength: number = -1;\n  @Input() validateOnBlur: boolean = false;\n  @Output() keyupChange: EventEmitter<any> = new EventEmitter();\n  @Output() onFocusError: EventEmitter<any> = new EventEmitter();\n  @Output() onBlurError: EventEmitter<any> = new EventEmitter();\n  @Input() additionalClasses: string[] = [];\n\n  public id = `input_${uuid()}`;\n  public formControl: FormControl | undefined;\n  public formControlName: string | number | null = '';\n\n  public isFocused: boolean = false;\n\n  private subscriptions: Subscription = new Subscription();\n  private translateService: TranslateService | null | undefined;\n  elementRef: ElementRef;\n  protected ref: ChangeDetectorRef | null = {\n    markForCheck: () => {}\n  } as ChangeDetectorRef;\n\n  protected constructor(protected injector: Injector) {\n  }\n\n  ngAfterViewInit() {\n    this.setFormControl();\n    this.setInjectedServices();\n  }\n\n  ngOnDestroy() {\n    this.subscriptions.unsubscribe();\n  }\n\n  get errorMessage(): string {\n    const [firstErrorKey] = Object.keys(this.formControl?.errors || {});\n    const errorLabelKey = `${INPUT_BASE_ERROR_PREFIX}${firstErrorKey}`;\n\n    return this.translateService ? this.translateService.instant(errorLabelKey) : errorLabelKey;\n  }\n\n  get isInvalid(): boolean {\n    return Boolean(this.formControl && this.formControl.errors && this.formControl.touched);\n  }\n\n  public onKeyup($event: any) {\n    this.keyupChange.emit($event);\n  }\n\n  public onFocus($event: any) {\n    this.isFocused = true;\n    this.formControl?.updateValueAndValidity();\n  }\n\n  public onBlur($event: any) {\n    if (this.isInvalid) {\n      this.onBlurError.emit({\n        key: this.formControlName,\n        errors: this.formControl?.errors\n      });\n    }\n  }\n\n  private setInjectedServices() {\n    this.translateService = this.injector.get(TranslateService as Type<TranslateService>, null);\n    this.ref = this.injector.get(ChangeDetectorRef as Type<ChangeDetectorRef>, null);\n    this.elementRef = this.injector.get(ElementRef as Type<ElementRef>);\n\n    if (this.ref) {\n      // Detect changes to show pending error (if present)\n      this.ref.detectChanges();\n    }\n  }\n\n  private setFormControl() {\n    const ngControl = this.injector.get(NgControl as Type<NgControl>);\n    console.log(ngControl)\n    if (ngControl) {\n      this.formControl = ngControl.control as FormControl;\n      this.formControlName = ngControl.name;\n      this.subscriptions.add(\n        this.formControl?.statusChanges.subscribe(() => {\n          this.ref?.markForCheck();\n        })\n      );\n    } else {\n      throw Error('Missing ngControl');\n    }\n  }\n  \n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "injector",
+                        "type": "Injector",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 32,
+                "modifierKind": [
+                    122
+                ],
+                "jsdoctags": [
+                    {
+                        "name": "injector",
+                        "type": "Injector",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "implements": [
+                "AfterViewInit",
+                "OnDestroy"
+            ],
+            "accessors": {
+                "errorMessage": {
+                    "name": "errorMessage",
+                    "getSignature": {
+                        "name": "errorMessage",
+                        "type": "string",
+                        "returnType": "string",
+                        "line": 46
+                    }
+                },
+                "isInvalid": {
+                    "name": "isInvalid",
+                    "getSignature": {
+                        "name": "isInvalid",
+                        "type": "boolean",
+                        "returnType": "boolean",
+                        "line": 53
+                    }
+                }
+            }
+        },
+        {
+            "name": "InputCheckboxComponent",
+            "id": "component-InputCheckboxComponent-b0b3335b735c809c70cd1d09d993b2d92af30b5471f2c077b1bc6bd45f14b438ab5d325fd6da1f7ab8b4586083f7ecc65b7df7286547aad33ed7a7bf30d5fa8b",
+            "file": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => InputCheckboxComponent), multi: true\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "zen-input-checkbox",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./input-checkbox.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "isHTML",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nisHTML says that the component will render html elements in content\n",
+                    "description": "<p>isHTML says that the component will render html elements in content</p>\n",
+                    "line": 35,
+                    "type": "boolean",
+                    "decorators": []
+                },
+                {
+                    "name": "additionalClasses",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string[]",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "maxLength",
+                    "defaultValue": "-1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "number",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "validateOnBlur",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "clicked",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 30,
+                    "type": "EventEmitter"
+                },
+                {
+                    "name": "keyupChange",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "EventEmitter<any>",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onBlurError",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter<any>",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onFocusError",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<any>",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "innerValue",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 26,
+                    "modifierKind": [
+                        121
                     ]
                 },
                 {
@@ -576,10 +932,7 @@
                     "type": "function",
                     "optional": false,
                     "description": "",
-                    "line": 29,
-                    "modifierKind": [
-                        121
-                    ]
+                    "line": 28
                 },
                 {
                     "name": "onTouched",
@@ -588,7 +941,19 @@
                     "type": "function",
                     "optional": false,
                     "description": "",
-                    "line": 26
+                    "line": 27
+                },
+                {
+                    "name": "elementRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
                 },
                 {
                     "name": "formControl",
@@ -597,7 +962,7 @@
                     "type": "FormControl | undefined",
                     "optional": false,
                     "description": "",
-                    "line": 20,
+                    "line": 22,
                     "modifierKind": [
                         123
                     ],
@@ -613,7 +978,7 @@
                     "type": "string | number | null",
                     "optional": false,
                     "description": "",
-                    "line": 21,
+                    "line": 23,
                     "modifierKind": [
                         123
                     ],
@@ -629,7 +994,7 @@
                     "type": "",
                     "optional": false,
                     "description": "",
-                    "line": 19,
+                    "line": 21,
                     "modifierKind": [
                         123
                     ],
@@ -645,7 +1010,7 @@
                     "type": "boolean",
                     "optional": false,
                     "description": "",
-                    "line": 23,
+                    "line": 25,
                     "modifierKind": [
                         123
                     ],
@@ -661,7 +1026,7 @@
                     "type": "ChangeDetectorRef | null",
                     "optional": false,
                     "description": "",
-                    "line": 27,
+                    "line": 30,
                     "modifierKind": [
                         122
                     ],
@@ -677,7 +1042,7 @@
                     "type": "Subscription",
                     "optional": false,
                     "description": "",
-                    "line": 25,
+                    "line": 27,
                     "modifierKind": [
                         121
                     ],
@@ -692,7 +1057,7 @@
                     "type": "TranslateService | null | undefined",
                     "optional": false,
                     "description": "",
-                    "line": 26,
+                    "line": 28,
                     "modifierKind": [
                         121
                     ],
@@ -703,12 +1068,81 @@
             ],
             "methodsClass": [
                 {
+                    "name": "getClassFromHostAttribute",
+                    "args": [
+                        {
+                            "name": "hostAttribute",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 58,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nset the class defined in HOST_ATTRIBUTES_CLASS\nconst HOST_ATTRIBUTES_CLASS: any = {\n'zen-small': 'zen-input-checkbox--small',\n'zen-switch': 'zen-input-checkbox--switch'\n};\n",
+                    "description": "<p>set the class defined in HOST_ATTRIBUTES_CLASS\nconst HOST_ATTRIBUTES_CLASS: any = {\n&#39;zen-small&#39;: &#39;zen-input-checkbox--small&#39;,\n&#39;zen-switch&#39;: &#39;zen-input-checkbox--switch&#39;\n};</p>\n",
+                    "modifierKind": [
+                        121,
+                        124
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "hostAttribute",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "hasHostAttributes",
+                    "args": [
+                        {
+                            "name": "attributes",
+                            "type": "string[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "dotDotDotToken": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "any",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "rawdescription": "\n\nDetects if component has host attributes to set the variatons\n\nconst HOST_ATTRIBUTES: string[] = [\n'zen-small',\n'zen-switch'\n];\n",
+                    "description": "<p>Detects if component has host attributes to set the variatons</p>\n<p>const HOST_ATTRIBUTES: string[] = [\n&#39;zen-small&#39;,\n&#39;zen-switch&#39;\n];</p>\n",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "attributes",
+                            "type": "string[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "dotDotDotToken": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
                     "name": "ngAfterViewInit",
                     "args": [],
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 79,
+                    "line": 41,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -717,6 +1151,34 @@
                     "inheritance": {
                         "file": "InputBaseComponent"
                     }
+                },
+                {
+                    "name": "onClick",
+                    "args": [
+                        {
+                            "name": "value",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 106,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "value",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
                 },
                 {
                     "name": "registerOnChange",
@@ -731,7 +1193,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 69,
+                    "line": 96,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -759,43 +1221,12 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 72,
+                    "line": 99,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
                         {
                             "name": "fn",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "tagName": {
-                                "text": "param"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "name": "sanitizeValue",
-                    "args": [
-                        {
-                            "name": "obj",
-                            "type": "any",
-                            "deprecated": false,
-                            "deprecationMessage": ""
-                        }
-                    ],
-                    "optional": false,
-                    "returnType": "any",
-                    "typeParameters": [],
-                    "line": 51,
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "modifierKind": [
-                        121
-                    ],
-                    "jsdoctags": [
-                        {
-                            "name": "obj",
                             "type": "any",
                             "deprecated": false,
                             "deprecationMessage": "",
@@ -815,10 +1246,10 @@
                             "deprecationMessage": ""
                         }
                     ],
-                    "optional": false,
+                    "optional": true,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 75,
+                    "line": 102,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -846,7 +1277,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 65,
+                    "line": 90,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "jsdoctags": [
@@ -867,7 +1298,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 39,
+                    "line": 42,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "inheritance": {
@@ -887,7 +1318,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 63,
+                    "line": 66,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -921,7 +1352,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 58,
+                    "line": 61,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -955,7 +1386,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 54,
+                    "line": 57,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -982,7 +1413,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 82,
+                    "line": 86,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -998,7 +1429,7 @@
                     "optional": false,
                     "returnType": "void",
                     "typeParameters": [],
-                    "line": 72,
+                    "line": 75,
                     "deprecated": false,
                     "deprecationMessage": "",
                     "modifierKind": [
@@ -1016,7 +1447,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, forwardRef, Injector, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\nimport { InputBaseComponent } from '../input-base/input-base.component';\n\n@Component({\n  selector: 'zen-input-text',\n  templateUrl: './input-text.component.html',\n  styles: [\n  ],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [{\n    provide: NG_VALUE_ACCESSOR,\n    useExisting: forwardRef(() => InputTextComponent),\n    multi: true\n  }]\n})\nexport class InputTextComponent extends InputBaseComponent implements ControlValueAccessor, AfterViewInit, OnDestroy {\n  @Input() disabled: boolean = false;\n  @Input() placeholder: boolean = false;\n  @Input() type = 'text';\n  @Input() additionalClass: string[] = [];\n\n  @ViewChild('inputText', {static: true}) inputElement?: ElementRef;\n\n  inferredType = 'text';\n  onTouched!: (val: any) => void;\n  private innerValue: string = '';\n  private cleave: any;\n  private onChange!: (val: any) => void;\n\n  constructor(injector: Injector) {\n    super(injector);\n  }\n\n  get value(): any {\n    return this.innerValue;\n  }\n\n  get isFilled(): boolean {\n    return Boolean(this.innerValue || this.placeholder);\n  }\n\n  set value(obj: any) {\n    if (obj !== this.innerValue) {\n      this.innerValue = this.sanitizeValue(obj);\n      this.onChange(this.innerValue);\n      this.onTouched(this.innerValue);\n    }\n  }\n\n  private sanitizeValue(obj: any) {\n    if (!this.cleave) {\n      return obj;\n    }\n\n    switch (this.type) {\n      case 'numeric':\n        return (this.cleave.getRawValue() || '').replace(/[^0-9]/, '');\n      default: {\n        return this.cleave.getRawValue();\n      }\n    }\n  }\n  \n  writeValue(obj: any): void {\n    this.innerValue = obj;\n    this.ref?.markForCheck();\n  }\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n  setDisabledState(isDisabled: boolean): void {\n    this.disabled = isDisabled;\n  }\n\n  override ngAfterViewInit(): void {\n    super.ngAfterViewInit();\n    switch (this.type) {\n      case 'email': {\n        this.inferredType = 'email';\n        break;\n      }\n      case 'password': {\n        this.inferredType = 'password';\n        break;\n      }\n      case 'hidden': {\n        this.inferredType = 'hidden';\n        break;\n      }\n      default: {\n        // Ignore\n      }\n    }\n  }\n\n}\n",
+            "sourceCode": "import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\nimport { ChangeDetectionStrategy, Component, OnInit, Injector, Output, Input, EventEmitter, AfterViewInit, forwardRef } from '@angular/core';\nimport { InputBaseComponent } from '../input-base/input-base.component';\n\nconst HOST_ATTRIBUTES_CLASS: any = {\n  'zen-small': 'zen-input-checkbox--small',\n  'zen-switch': 'zen-input-checkbox--switch'\n};\nconst HOST_ATTRIBUTES: string[] = [\n  'zen-small',\n  'zen-switch'\n];\n\n@Component({\n  selector: 'zen-input-checkbox',\n  templateUrl: './input-checkbox.component.html',\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [{\n    provide: NG_VALUE_ACCESSOR,\n    useExisting: forwardRef(() => InputCheckboxComponent),\n    multi: true\n  }]\n})\nexport class InputCheckboxComponent extends InputBaseComponent implements ControlValueAccessor, AfterViewInit {\n\n  private innerValue: boolean;\n  onTouched: (val: any) => void;\n  onChange: (val: any) => void;\n\n  @Output() clicked = new EventEmitter();\n\n  /**\n   * isHTML says that the component will render html elements in content\n   */\n  @Input() isHTML: boolean;\n\n  constructor(injector: Injector) {\n    super(injector);\n  }\n\n  override ngAfterViewInit(): void {\n    super.ngAfterViewInit();\n    for (const attr of HOST_ATTRIBUTES) {\n      if (this.hasHostAttributes(attr)) {\n        const classFromAttribute = InputCheckboxComponent.getClassFromHostAttribute(attr);\n        this.additionalClasses = [...this.additionalClasses, classFromAttribute];\n      }\n    }\n  }\n\n  /**\n  * set the class defined in HOST_ATTRIBUTES_CLASS\n  * const HOST_ATTRIBUTES_CLASS: any = {\n    'zen-small': 'zen-input-checkbox--small',\n    'zen-switch': 'zen-input-checkbox--switch'\n    };\n  */\n  private static getClassFromHostAttribute(hostAttribute: string) {\n    return HOST_ATTRIBUTES_CLASS[hostAttribute] || 'zen-input-checkbox--default';\n  }\n\n  private get hostElement() {\n    return this.elementRef?.nativeElement;\n  }\n\n/**\n * Detects if component has host attributes to set the variatons\n * \n    const HOST_ATTRIBUTES: string[] = [\n    'zen-small',\n    'zen-switch'\n    ];\n */\nprivate hasHostAttributes(...attributes: string[]) {\n    return attributes.some(attribute => this.hostElement.hasAttribute(attribute));\n  }\n\n  get value(): any {\n    return this.innerValue;\n  }\n\n  set value(obj: any) {\n    if (obj !== this.innerValue) {\n      this.innerValue = obj;\n      this.onChange(obj);\n      this.onTouched(obj);\n    }\n  }\n\n  writeValue(obj: any): void {\n    if (obj !== this.innerValue) {\n      this.innerValue = obj;\n      this.ref?.markForCheck();\n    }\n  }\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n  setDisabledState?(isDisabled: boolean): void {\n    this.disabled = isDisabled;\n  }\n\n  onClick(value: any) {\n    this.clicked.emit(value);\n    this.hostElement.blur();\n  }\n\n}\n",
             "assetsDirs": [],
             "styleUrlsData": "",
             "stylesData": "",
@@ -1033,7 +1464,757 @@
                         "deprecationMessage": ""
                     }
                 ],
-                "line": 29,
+                "line": 35,
+                "jsdoctags": [
+                    {
+                        "name": "injector",
+                        "type": "Injector",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "tagName": {
+                            "text": "param"
+                        }
+                    }
+                ]
+            },
+            "extends": "InputBaseComponent",
+            "implements": [
+                "ControlValueAccessor",
+                "AfterViewInit"
+            ],
+            "accessors": {
+                "hostElement": {
+                    "name": "hostElement",
+                    "getSignature": {
+                        "name": "hostElement",
+                        "type": "",
+                        "returnType": "",
+                        "line": 62
+                    }
+                },
+                "value": {
+                    "name": "value",
+                    "setSignature": {
+                        "name": "value",
+                        "type": "void",
+                        "deprecated": false,
+                        "deprecationMessage": "",
+                        "args": [
+                            {
+                                "name": "obj",
+                                "type": "any",
+                                "deprecated": false,
+                                "deprecationMessage": ""
+                            }
+                        ],
+                        "returnType": "void",
+                        "line": 82,
+                        "jsdoctags": [
+                            {
+                                "name": "obj",
+                                "type": "any",
+                                "deprecated": false,
+                                "deprecationMessage": "",
+                                "tagName": {
+                                    "text": "param"
+                                }
+                            }
+                        ]
+                    },
+                    "getSignature": {
+                        "name": "value",
+                        "type": "any",
+                        "returnType": "any",
+                        "line": 78
+                    }
+                }
+            },
+            "templateData": "<div class=\"zen-input-checkbox\"\n     [class.zen-input-checkbox--disabled]=\"disabled\"\n     [class.zen-input-checkbox--html]=\"isHTML\"\n     [ngClass]=\"additionalClasses\"\n>\n  <input class=\"zen-form-checkbox\" type=\"checkbox\"\n         [id]=\"id\"\n         [disabled]=\"disabled\"\n         [(ngModel)]=\"value\"\n         (click)=\"onClick(value)\"\n  >\n  <label class=\"zen-input-checkbox__label\"\n         [for]=\"id\"\n  >\n    <ng-content></ng-content>\n  </label>\n</div>\n\n"
+        },
+        {
+            "name": "InputTextComponent",
+            "id": "component-InputTextComponent-3e97061b6e3a55d5a52e72d7a878874eb4b1a729595ca2f94c8f4d46308b0673f0aa6a2ec4929dac1d4d5885f8b320ab286881ebacda1dcbb334f7e5a49cc6ee",
+            "file": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+            "changeDetection": "ChangeDetectionStrategy.OnPush",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [
+                {
+                    "name": "{\n    provide: NG_VALUE_ACCESSOR, useExisting: forwardRef(() => InputTextComponent), multi: true\n}",
+                    "type": "component"
+                }
+            ],
+            "selector": "zen-input-text",
+            "styleUrls": [],
+            "styles": [],
+            "templateUrl": [
+                "./input-text.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "placeholder",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 26,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "type",
+                    "defaultValue": "'text'",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 27,
+                    "type": "string",
+                    "decorators": []
+                },
+                {
+                    "name": "additionalClasses",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 19,
+                    "type": "string[]",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "ariaLabel",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 13,
+                    "type": "string",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "disabled",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 11,
+                    "type": "boolean",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 12,
+                    "type": "string",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "maxLength",
+                    "defaultValue": "-1",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 14,
+                    "type": "number",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "validateOnBlur",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 15,
+                    "type": "boolean",
+                    "decorators": [],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                }
+            ],
+            "outputsClass": [
+                {
+                    "name": "keyupChange",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 16,
+                    "type": "EventEmitter<any>",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onBlurError",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 18,
+                    "type": "EventEmitter<any>",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onFocusError",
+                    "defaultValue": "new EventEmitter()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "line": 17,
+                    "type": "EventEmitter<any>",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                }
+            ],
+            "propertiesClass": [
+                {
+                    "name": "innerValue",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string",
+                    "optional": false,
+                    "description": "",
+                    "line": 31,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "onChange",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 32,
+                    "modifierKind": [
+                        121
+                    ]
+                },
+                {
+                    "name": "onTouched",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "function",
+                    "optional": false,
+                    "description": "",
+                    "line": 30
+                },
+                {
+                    "name": "variationClass",
+                    "defaultValue": "[]",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 29
+                },
+                {
+                    "name": "elementRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ElementRef",
+                    "optional": false,
+                    "description": "",
+                    "line": 29,
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "formControl",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "FormControl | undefined",
+                    "optional": false,
+                    "description": "",
+                    "line": 22,
+                    "modifierKind": [
+                        123
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "formControlName",
+                    "defaultValue": "''",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string | number | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 23,
+                    "modifierKind": [
+                        123
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "id",
+                    "defaultValue": "`input_${uuid()}`",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 21,
+                    "modifierKind": [
+                        123
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "isFocused",
+                    "defaultValue": "false",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "boolean",
+                    "optional": false,
+                    "description": "",
+                    "line": 25,
+                    "modifierKind": [
+                        123
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "ref",
+                    "defaultValue": "{\n    markForCheck: () => {}\n  } as ChangeDetectorRef",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "ChangeDetectorRef | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 30,
+                    "modifierKind": [
+                        122
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "subscriptions",
+                    "defaultValue": "new Subscription()",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Subscription",
+                    "optional": false,
+                    "description": "",
+                    "line": 27,
+                    "modifierKind": [
+                        121
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "translateService",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "TranslateService | null | undefined",
+                    "optional": false,
+                    "description": "",
+                    "line": 28,
+                    "modifierKind": [
+                        121
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "getClassFromHostAttribute",
+                    "args": [
+                        {
+                            "name": "hostAttribute",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "string",
+                    "typeParameters": [],
+                    "line": 38,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121,
+                        124
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "hostAttribute",
+                            "type": "string",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "hasHostAttributes",
+                    "args": [
+                        {
+                            "name": "attributes",
+                            "type": "string[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "dotDotDotToken": true
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "boolean",
+                    "typeParameters": [],
+                    "line": 46,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "attributes",
+                            "type": "string[]",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "dotDotDotToken": true,
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngAfterViewInit",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 80,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        158
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "registerOnChange",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "registerOnTouched",
+                    "args": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 73,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "fn",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "setDisabledState",
+                    "args": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 76,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "isDisabled",
+                            "type": "boolean",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "writeValue",
+                    "args": [
+                        {
+                            "name": "obj",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "jsdoctags": [
+                        {
+                            "name": "obj",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ngOnDestroy",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 42,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onBlur",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onFocus",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 61,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "onKeyup",
+                    "args": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": ""
+                        }
+                    ],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 57,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        123
+                    ],
+                    "jsdoctags": [
+                        {
+                            "name": "$event",
+                            "type": "any",
+                            "deprecated": false,
+                            "deprecationMessage": "",
+                            "tagName": {
+                                "text": "param"
+                            }
+                        }
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "setFormControl",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 86,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                },
+                {
+                    "name": "setInjectedServices",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 75,
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "modifierKind": [
+                        121
+                    ],
+                    "inheritance": {
+                        "file": "InputBaseComponent"
+                    }
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { AfterViewInit, ChangeDetectionStrategy, Component, forwardRef, Injector, Input, OnDestroy } from '@angular/core';\nimport { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';\nimport { InputBaseComponent } from '../input-base/input-base.component';\n\nconst BUTTON_HOST_ATTRIBUTES_CLASS: any = {\n  'zen-small': 'zen-input--small',\n  'zen-medium': 'zen-input--medium'\n};\nconst BUTTON_HOST_ATTRIBUTES: string[] = [\n  'zen-small',\n  'zen-medium'\n];\n@Component({\n  selector: 'zen-input-text',\n  templateUrl: './input-text.component.html',\n  styles: [\n  ],\n  changeDetection: ChangeDetectionStrategy.OnPush,\n  providers: [{\n    provide: NG_VALUE_ACCESSOR,\n    useExisting: forwardRef(() => InputTextComponent),\n    multi: true\n  }]\n})\nexport class InputTextComponent extends InputBaseComponent implements ControlValueAccessor, AfterViewInit, OnDestroy {\n  @Input() placeholder: string = '';\n  @Input() type = 'text';\n\n  variationClass: string[] = [];\n  onTouched!: (val: any) => void;\n  private innerValue: string = '';\n  private onChange!: (val: any) => void;\n\n  constructor(injector: Injector) {\n    super(injector);\n  }\n\n  private static getClassFromHostAttribute(hostAttribute: string): string {\n    return BUTTON_HOST_ATTRIBUTES_CLASS[hostAttribute] || '';\n  }\n\n  private get hostElement() {\n    return this.elementRef.nativeElement;\n  }\n\n  private hasHostAttributes(...attributes: string[]): boolean {\n    return attributes.some(attribute => this.hostElement.hasAttribute(attribute));\n  }\n\n  get value(): any {\n    return this.innerValue;\n  }\n\n  get isFilled(): boolean {\n    return Boolean(this.innerValue || this.placeholder);\n  }\n\n  set value(obj: any) {\n    if (obj !== this.innerValue) {\n      this.innerValue = obj;\n      this.onChange(this.innerValue);\n      this.onTouched(this.innerValue);\n    }\n  }\n  \n  writeValue(obj: any): void {\n    this.innerValue = obj;\n    this.ref?.markForCheck();\n  }\n  registerOnChange(fn: any): void {\n    this.onChange = fn;\n  }\n  registerOnTouched(fn: any): void {\n    this.onTouched = fn;\n  }\n  setDisabledState(isDisabled: boolean): void {\n    this.disabled = isDisabled;\n  }\n\n  override ngAfterViewInit(): void {\n    super.ngAfterViewInit();\n    for (const attr of BUTTON_HOST_ATTRIBUTES) {\n      if (this.hasHostAttributes(attr)) {\n        const classFromAttribute = InputTextComponent.getClassFromHostAttribute(attr);\n        this.variationClass = [...this.variationClass, classFromAttribute ];\n      }\n    }\n  }\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": "",
+            "stylesData": "",
+            "constructorObj": {
+                "name": "constructor",
+                "description": "",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "args": [
+                    {
+                        "name": "injector",
+                        "type": "Injector",
+                        "deprecated": false,
+                        "deprecationMessage": ""
+                    }
+                ],
+                "line": 32,
                 "jsdoctags": [
                     {
                         "name": "injector",
@@ -1053,6 +2234,15 @@
                 "OnDestroy"
             ],
             "accessors": {
+                "hostElement": {
+                    "name": "hostElement",
+                    "getSignature": {
+                        "name": "hostElement",
+                        "type": "",
+                        "returnType": "",
+                        "line": 42
+                    }
+                },
                 "value": {
                     "name": "value",
                     "setSignature": {
@@ -1069,7 +2259,7 @@
                             }
                         ],
                         "returnType": "void",
-                        "line": 43,
+                        "line": 58,
                         "jsdoctags": [
                             {
                                 "name": "obj",
@@ -1086,7 +2276,7 @@
                         "name": "value",
                         "type": "any",
                         "returnType": "any",
-                        "line": 35
+                        "line": 50
                     }
                 },
                 "isFilled": {
@@ -1095,11 +2285,91 @@
                         "name": "isFilled",
                         "type": "boolean",
                         "returnType": "boolean",
-                        "line": 39
+                        "line": 54
                     }
                 }
             },
-            "templateData": "<div class=\"zen-input zen-input-text\"\n     [class.zen-input--validate-on-blur]=\"validateOnBlur\"\n     [class.zen-input--focused]=\"isFocused\"\n     [class.zen-input-text--hidden]=\"type === 'hidden'\"\n     [class.zen-input-text--disabled]=\"disabled\"\n>\n  <input class=\"zen-input__input {{additionalClass ? additionalClass : ''}}\"\n         [type]=\"inferredType\"\n         [id]=\"id\"\n         [disabled]=\"disabled\"\n         [class.zen-input__input--filled]=\"isFilled\"\n         [attr.aria-label]=\"ariaLabel ? ariaLabel : null\"\n         [attr.placeholder]=\"placeholder ? placeholder : null\"\n         [attr.maxlength]=\"maxLength ? maxLength : null\"\n         (blur)=\"onBlur(value)\"\n         (keyup)=\"onKeyup(value)\"\n         (focus)=\"onFocus(value)\"\n         [(ngModel)]=\"value\"\n         #inputText\n  />\n  <label class=\"zen-input__label\"\n         *ngIf=\"label\"\n         [for]=\"id\"\n         [innerHTML]=\"label\"\n  ></label>\n  <div class=\"zen-input__error\" *ngIf=\"isInvalid && (!validateOnBlur || !isFocused)\">\n    {{errorMessage}}\n  </div>\n</div>\n"
+            "templateData": "<div class=\"zen-input zen-input-text {{variationClass ? variationClass : ''}}\"\n     [class.zen-input--validate-on-blur]=\"validateOnBlur\"\n     [class.zen-input--focused]=\"isFocused\"\n     [class.zen-input-text--hidden]=\"type === 'hidden'\"\n     [class.zen-input-text--disabled]=\"disabled\"\n     [class.error]=\"isInvalid\"\n>\n<label class=\"zen-input__label\"\n*ngIf=\"label\"\n[for]=\"id\"\n[innerHTML]=\"label\"\n></label>\n  <input class=\"zen-input__input {{additionalClasses ? additionalClasses : ''}}\"\n         [type]=\"type\"\n         [id]=\"id\"\n         [disabled]=\"disabled\"\n         [class.zen-input__input--filled]=\"isFilled\"\n         [attr.aria-label]=\"ariaLabel ? ariaLabel : null\"\n         [attr.placeholder]=\"placeholder ? placeholder : null\"\n         [attr.maxlength]=\"maxLength ? maxLength : null\"\n         (blur)=\"onBlur(value)\"\n         (keyup)=\"onKeyup(value)\"\n         (focus)=\"onFocus(value)\"\n         [(ngModel)]=\"value\"\n         #inputText\n  />\n  <div class=\"zen-input__error\" *ngIf=\"isInvalid && (!validateOnBlur || !isFocused)\">\n    {{errorMessage}}\n  </div>\n</div>\n"
+        },
+        {
+            "name": "PageComponent",
+            "id": "component-PageComponent-7126d8c2607c946741c651482413b43feb72b2d63cac9d3ac173fde206a5e635eb4cdbf7ca7ac9327c7d4d05cf7ef619144c34c11609ad677081d0ee4e855064",
+            "file": "stories/page.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "storybook-page",
+            "styleUrls": [
+                "./page.css"
+            ],
+            "styles": [],
+            "template": "<article>    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>",
+            "templateUrl": [],
+            "viewProviders": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "user",
+                    "defaultValue": "null",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "User | null",
+                    "optional": false,
+                    "description": "",
+                    "line": 64
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "doCreateAccount",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 74,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogin",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 70,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                },
+                {
+                    "name": "doLogout",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 66,
+                    "deprecated": false,
+                    "deprecationMessage": ""
+                }
+            ],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\nimport { User } from './User';\n\n@Component({\n  selector: 'storybook-page',\n  template: `<article>\n    <storybook-header\n      [user]=\"user\"\n      (onLogout)=\"doLogout()\"\n      (onLogin)=\"doLogin()\"\n      (onCreateAccount)=\"doCreateAccount()\"\n    ></storybook-header>\n    <section>\n      <h2>Pages in Storybook</h2>\n      <p>\n        We recommend building UIs with a\n        <a href=\"https://componentdriven.org\" target=\"_blank\" rel=\"noopener noreferrer\">\n          <strong>component-driven</strong>\n        </a>\n        process starting with atomic components and ending with pages.\n      </p>\n      <p>\n        Render pages with mock data. This makes it easy to build and review page states without\n        needing to navigate to them in your app. Here are some handy patterns for managing page data\n        in Storybook:\n      </p>\n      <ul>\n        <li>\n          Use a higher-level connected component. Storybook helps you compose such data from the\n          \"args\" of child component stories\n        </li>\n        <li>\n          Assemble data in the page component from your services. You can mock these services out\n          using Storybook.\n        </li>\n      </ul>\n      <p>\n        Get a guided tutorial on component-driven development at\n        <a href=\"https://storybook.js.org/tutorials/\" target=\"_blank\" rel=\"noopener noreferrer\">\n          Storybook tutorials\n        </a>\n        . Read more in the\n        <a href=\"https://storybook.js.org/docs\" target=\"_blank\" rel=\"noopener noreferrer\"> docs </a>\n        .\n      </p>\n      <div class=\"tip-wrapper\">\n        <span class=\"tip\">Tip</span> Adjust the width of the canvas with the\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\">\n          <g fill=\"none\" fillRule=\"evenodd\">\n            <path\n              d=\"M1.5 5.2h4.8c.3 0 .5.2.5.4v5.1c-.1.2-.3.3-.4.3H1.4a.5.5 0 01-.5-.4V5.7c0-.3.2-.5.5-.5zm0-2.1h6.9c.3 0 .5.2.5.4v7a.5.5 0 01-1 0V4H1.5a.5.5 0 010-1zm0-2.1h9c.3 0 .5.2.5.4v9.1a.5.5 0 01-1 0V2H1.5a.5.5 0 010-1zm4.3 5.2H2V10h3.8V6.2z\"\n              id=\"a\"\n              fill=\"#999\"\n            />\n          </g>\n        </svg>\n        Viewports addon in the toolbar\n      </div>\n    </section>\n  </article>`,\n  styleUrls: ['./page.css'],\n})\nexport default class PageComponent {\n  user: User | null = null;\n\n  doLogout() {\n    this.user = null;\n  }\n\n  doLogin() {\n    this.user = { name: 'Jane Doe' };\n  }\n\n  doCreateAccount() {\n    this.user = { name: 'Jane Doe' };\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "section {\n  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 14px;\n  line-height: 24px;\n  padding: 48px 20px;\n  margin: 0 auto;\n  max-width: 600px;\n  color: #333;\n}\n\nsection h2 {\n  font-weight: 900;\n  font-size: 32px;\n  line-height: 1;\n  margin: 0 0 4px;\n  display: inline-block;\n  vertical-align: top;\n}\n\nsection p {\n  margin: 1em 0;\n}\n\nsection a {\n  text-decoration: none;\n  color: #1ea7fd;\n}\n\nsection ul {\n  padding-left: 30px;\n  margin: 1em 0;\n}\n\nsection li {\n  margin-bottom: 8px;\n}\n\nsection .tip {\n  display: inline-block;\n  border-radius: 1em;\n  font-size: 11px;\n  line-height: 12px;\n  font-weight: 700;\n  background: #e7fdd8;\n  color: #66bf3c;\n  padding: 4px 12px;\n  margin-right: 10px;\n  vertical-align: top;\n}\n\nsection .tip-wrapper {\n  font-size: 13px;\n  line-height: 20px;\n  margin-top: 40px;\n  margin-bottom: 40px;\n}\n\nsection .tip-wrapper svg {\n  display: inline-block;\n  height: 12px;\n  width: 12px;\n  margin-right: 4px;\n  vertical-align: top;\n  margin-top: 3px;\n}\n\nsection .tip-wrapper svg path {\n  fill: #1ea7fd;\n}\n",
+                    "styleUrl": "./page.css"
+                }
+            ],
+            "stylesData": ""
         }
     ],
     "modules": [
@@ -1153,13 +2423,13 @@
         },
         {
             "name": "ZenUikitLibModule",
-            "id": "module-ZenUikitLibModule-27ce23c06ecac0ed8f6fcdd2beef9c84074bc6cff6c6d8e7bfdd80629b4d6b8cd7c2d3a7aa13bd013df855dba659dd78006a7e6239810c2e0f0b403609d9f085",
+            "id": "module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/zen-uikit-lib/src/lib/zen-uikit-lib.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { InputTextComponent } from './components/input-text/input-text.component';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { OverlayModule } from '@angular/cdk/overlay';\nimport { PortalModule } from '@angular/cdk/portal';\n\n\nconst components = [\n  InputTextComponent\n]\n@NgModule({\n  declarations: [\n    ...components\n  ],\n  imports: [\n    CommonModule,\n\n    // Angular deps\n    FormsModule,\n    ReactiveFormsModule,\n    OverlayModule,\n    PortalModule\n\n  ],\n  exports: [\n    ...components\n  ]\n})\nexport class ZenUikitLibModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { InputTextComponent } from './components/input-text/input-text.component';\nimport { CommonModule } from '@angular/common';\nimport { FormsModule, ReactiveFormsModule } from '@angular/forms';\nimport { OverlayModule } from '@angular/cdk/overlay';\nimport { PortalModule } from '@angular/cdk/portal';\nimport { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';\n\n\nconst components = [\n  InputTextComponent,\n  InputCheckboxComponent\n]\n@NgModule({\n  declarations: [\n    ...components,\n  ],\n  imports: [\n    CommonModule,\n\n    // Angular deps\n    FormsModule,\n    ReactiveFormsModule,\n    OverlayModule,\n    PortalModule\n\n  ],\n  exports: [\n    ...components\n  ]\n})\nexport class ZenUikitLibModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -1168,6 +2438,9 @@
                 {
                     "type": "declarations",
                     "elements": [
+                        {
+                            "name": "InputCheckboxComponent"
+                        },
                         {
                             "name": "InputTextComponent"
                         }
@@ -1180,6 +2453,9 @@
                 {
                     "type": "exports",
                     "elements": [
+                        {
+                            "name": "InputCheckboxComponent"
+                        },
                         {
                             "name": "InputTextComponent"
                         }
@@ -1199,6 +2475,26 @@
     "miscellaneous": {
         "variables": [
             {
+                "name": "BUTTON_HOST_ATTRIBUTES",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string[]",
+                "defaultValue": "[\n  'zen-small',\n  'zen-medium'\n]"
+            },
+            {
+                "name": "BUTTON_HOST_ATTRIBUTES_CLASS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "any",
+                "defaultValue": "{\n  'zen-small': 'zen-input--small',\n  'zen-medium': 'zen-input--medium'\n}"
+            },
+            {
                 "name": "components",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1206,7 +2502,7 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "[]",
-                "defaultValue": "[\n  InputTextComponent\n]"
+                "defaultValue": "[\n  InputTextComponent,\n  InputCheckboxComponent\n]"
             },
             {
                 "name": "context",
@@ -1232,17 +2528,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/input.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
-                "name": "Disabled",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "stories/input.stories.ts",
+                "file": "stories/Input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "",
@@ -1269,6 +2555,26 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
+                "name": "HOST_ATTRIBUTES",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "string[]",
+                "defaultValue": "[\n  'zen-small',\n  'zen-switch'\n]"
+            },
+            {
+                "name": "HOST_ATTRIBUTES_CLASS",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "any",
+                "defaultValue": "{\n  'zen-small': 'zen-input-checkbox--small',\n  'zen-switch': 'zen-input-checkbox--switch'\n}"
+            },
+            {
                 "name": "INPUT_BASE_ERROR_PREFIX",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -1276,7 +2582,67 @@
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "string",
-                "defaultValue": "'zen-input-error-'"
+                "defaultValue": "'input-error-'"
+            },
+            {
+                "name": "Large",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedIn",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LoggedOut",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Primary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "require",
@@ -1297,102 +2663,92 @@
                 "type": "literal type"
             },
             {
+                "name": "Secondary",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Small",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "stories/input.stories.ts",
+                "file": "stories/Button.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Input-text.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story<InputTextComponent>",
                 "defaultValue": "(args: InputTextComponent) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "stories/Page.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Page>",
+                "defaultValue": "(args: Page) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
         "typealiases": [],
-        "enumerations": [
-            {
-                "name": "INPUT_DATE_TYPE",
-                "childs": [
-                    {
-                        "name": "DayMonthYear",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "DayMonthYear"
-                    },
-                    {
-                        "name": "MonthYear",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "MonthYear"
-                    }
-                ],
-                "ctype": "miscellaneous",
-                "subtype": "enum",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "file": "projects/zen-uikit-lib/src/lib/models/input.model.ts"
-            },
-            {
-                "name": "INPUT_SIZES",
-                "childs": [
-                    {
-                        "name": "small",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "s"
-                    },
-                    {
-                        "name": "medium",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "m"
-                    },
-                    {
-                        "name": "large",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "l"
-                    }
-                ],
-                "ctype": "miscellaneous",
-                "subtype": "enum",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "file": "projects/zen-uikit-lib/src/lib/models/input.model.ts"
-            },
-            {
-                "name": "INPUT_WEIGHTS",
-                "childs": [
-                    {
-                        "name": "light",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "light"
-                    },
-                    {
-                        "name": "regular",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "base"
-                    },
-                    {
-                        "name": "medium",
-                        "deprecated": false,
-                        "deprecationMessage": "",
-                        "value": "medium"
-                    }
-                ],
-                "ctype": "miscellaneous",
-                "subtype": "enum",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "file": "projects/zen-uikit-lib/src/lib/models/input.model.ts"
-            }
-        ],
+        "enumerations": [],
         "groupedVariables": {
+            "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts": [
+                {
+                    "name": "BUTTON_HOST_ATTRIBUTES",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "defaultValue": "[\n  'zen-small',\n  'zen-medium'\n]"
+                },
+                {
+                    "name": "BUTTON_HOST_ATTRIBUTES_CLASS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "defaultValue": "{\n  'zen-small': 'zen-input--small',\n  'zen-medium': 'zen-input--medium'\n}"
+                }
+            ],
             "projects/zen-uikit-lib/src/lib/zen-uikit-lib.module.ts": [
                 {
                     "name": "components",
@@ -1402,7 +2758,7 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "[]",
-                    "defaultValue": "[\n  InputTextComponent\n]"
+                    "defaultValue": "[\n  InputTextComponent,\n  InputCheckboxComponent\n]"
                 }
             ],
             "projects/lib-tester/src/test.ts": [
@@ -1447,22 +2803,12 @@
                     "type": "literal type"
                 }
             ],
-            "stories/input.stories.ts": [
+            "stories/Input-text.stories.ts": [
                 {
                     "name": "Default",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/input.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Disabled",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "stories/input.stories.ts",
+                    "file": "stories/Input-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "",
@@ -1472,7 +2818,7 @@
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "stories/input.stories.ts",
+                    "file": "stories/Input-text.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "Story<InputTextComponent>",
@@ -1503,6 +2849,28 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
+            "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts": [
+                {
+                    "name": "HOST_ATTRIBUTES",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "string[]",
+                    "defaultValue": "[\n  'zen-small',\n  'zen-switch'\n]"
+                },
+                {
+                    "name": "HOST_ATTRIBUTES_CLASS",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "any",
+                    "defaultValue": "{\n  'zen-small': 'zen-input-checkbox--small',\n  'zen-switch': 'zen-input-checkbox--switch'\n}"
+                }
+            ],
             "projects/zen-uikit-lib/src/lib/models/input.model.ts": [
                 {
                     "name": "INPUT_BASE_ERROR_PREFIX",
@@ -1512,101 +2880,133 @@
                     "deprecated": false,
                     "deprecationMessage": "",
                     "type": "string",
-                    "defaultValue": "'zen-input-error-'"
+                    "defaultValue": "'input-error-'"
+                }
+            ],
+            "stories/Button.stories.ts": [
+                {
+                    "name": "Large",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Primary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Secondary",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Small",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Button.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
+                }
+            ],
+            "stories/Header.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Header.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Header>",
+                    "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                }
+            ],
+            "stories/Page.stories.ts": [
+                {
+                    "name": "LoggedIn",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LoggedOut",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ]
         },
         "groupedFunctions": {},
-        "groupedEnumerations": {
-            "projects/zen-uikit-lib/src/lib/models/input.model.ts": [
-                {
-                    "name": "INPUT_DATE_TYPE",
-                    "childs": [
-                        {
-                            "name": "DayMonthYear",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "DayMonthYear"
-                        },
-                        {
-                            "name": "MonthYear",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "MonthYear"
-                        }
-                    ],
-                    "ctype": "miscellaneous",
-                    "subtype": "enum",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "file": "projects/zen-uikit-lib/src/lib/models/input.model.ts"
-                },
-                {
-                    "name": "INPUT_SIZES",
-                    "childs": [
-                        {
-                            "name": "small",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "s"
-                        },
-                        {
-                            "name": "medium",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "m"
-                        },
-                        {
-                            "name": "large",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "l"
-                        }
-                    ],
-                    "ctype": "miscellaneous",
-                    "subtype": "enum",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "file": "projects/zen-uikit-lib/src/lib/models/input.model.ts"
-                },
-                {
-                    "name": "INPUT_WEIGHTS",
-                    "childs": [
-                        {
-                            "name": "light",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "light"
-                        },
-                        {
-                            "name": "regular",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "base"
-                        },
-                        {
-                            "name": "medium",
-                            "deprecated": false,
-                            "deprecationMessage": "",
-                            "value": "medium"
-                        }
-                    ],
-                    "ctype": "miscellaneous",
-                    "subtype": "enum",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "file": "projects/zen-uikit-lib/src/lib/models/input.model.ts"
-                }
-            ]
-        },
+        "groupedEnumerations": {},
         "groupedTypeAliases": {}
     },
     "routes": [],
     "coverage": {
-        "count": 0,
+        "count": 2,
         "status": "low",
         "files": [
             {
@@ -1660,11 +3060,40 @@
             },
             {
                 "filePath": "projects/zen-uikit-lib/src/lib/components/input-base/input-base.component.ts",
-                "type": "injectable",
-                "linktype": "injectable",
+                "type": "component",
+                "linktype": "component",
                 "name": "InputBaseComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/16",
+                "coverageCount": "0/26",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "InputCheckboxComponent",
+                "coveragePercent": 7,
+                "coverageCount": "3/38",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "HOST_ATTRIBUTES",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/zen-uikit-lib/src/lib/components/input-checkbox/input-checkbox.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "HOST_ATTRIBUTES_CLASS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1673,7 +3102,27 @@
                 "linktype": "component",
                 "name": "InputTextComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/31",
+                "coverageCount": "0/38",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BUTTON_HOST_ATTRIBUTES",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/zen-uikit-lib/src/lib/components/input-text/input-text.component.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BUTTON_HOST_ATTRIBUTES_CLASS",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
                 "status": "low"
             },
             {
@@ -1717,16 +3166,87 @@
                 "status": "low"
             },
             {
-                "filePath": "stories/User.ts",
-                "type": "interface",
-                "linktype": "interface",
-                "name": "User",
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Large",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "stories/input.stories.ts",
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Primary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Secondary",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Small",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Header.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -1736,23 +3256,79 @@
                 "status": "low"
             },
             {
-                "filePath": "stories/input.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Disabled",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "stories/input.stories.ts",
+                "filePath": "stories/Input-text.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedIn",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LoggedOut",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/Page.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/User.ts",
+                "type": "interface",
+                "linktype": "interface",
+                "name": "User",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/button.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "ButtonComponent",
+                "coveragePercent": 83,
+                "coverageCount": "5/6",
+                "status": "very-good"
+            },
+            {
+                "filePath": "stories/header.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HeaderComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
+                "status": "low"
+            },
+            {
+                "filePath": "stories/page.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "PageComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/5",
                 "status": "low"
             }
         ]

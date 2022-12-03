@@ -59,18 +59,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ZenUikitLibModule.html" data-type="entity-link" >ZenUikitLibModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ZenUikitLibModule-d807f9101f711194ae534617266fe267009d4d4b36017e0519fca6b2e9437470fcf0df1eb28e37d9d4388582e644bfd40e924f2c8ff742d60fe1b22123deb2ea"' : 'data-target="#xs-components-links-module-ZenUikitLibModule-d807f9101f711194ae534617266fe267009d4d4b36017e0519fca6b2e9437470fcf0df1eb28e37d9d4388582e644bfd40e924f2c8ff742d60fe1b22123deb2ea"' }>
+                                            'data-target="#components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' : 'data-target="#xs-components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ZenUikitLibModule-d807f9101f711194ae534617266fe267009d4d4b36017e0519fca6b2e9437470fcf0df1eb28e37d9d4388582e644bfd40e924f2c8ff742d60fe1b22123deb2ea"' :
-                                            'id="xs-components-links-module-ZenUikitLibModule-d807f9101f711194ae534617266fe267009d4d4b36017e0519fca6b2e9437470fcf0df1eb28e37d9d4388582e644bfd40e924f2c8ff742d60fe1b22123deb2ea"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' :
+                                            'id="xs-components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' }>
                                             <li class="link">
-                                                <a href="components/InputTextComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >InputTextComponent</a>
+                                                <a href="components/InputCheckboxComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >InputCheckboxComponent</a>
                                             </li>
                                             <li class="link">
-                                                <a href="components/TableComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >TableComponent</a>
+                                                <a href="components/InputTextComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >InputTextComponent</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -91,19 +91,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                         </ul>
                     </li>
                     <li class="chapter">
-                        <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#interfaces-links"' :
-                            'data-target="#xs-interfaces-links"' }>
-                            <span class="icon ion-md-information-circle-outline"></span>
-                            <span>Interfaces</span>
-                            <span class="icon ion-ios-arrow-down"></span>
-                        </div>
-                        <ul class="links collapse " ${ isNormalMode ? ' id="interfaces-links"' : 'id="xs-interfaces-links"' }>
-                            <li class="link">
-                                <a href="interfaces/GenericType.html" data-type="entity-link" >GenericType</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ? 'data-target="#miscellaneous-links"'
                             : 'data-target="#xs-miscellaneous-links"' }>
                             <span class="icon ion-ios-cube"></span>
@@ -111,9 +98,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                             <span class="icon ion-ios-arrow-down"></span>
                         </div>
                         <ul class="links collapse " ${ isNormalMode ? 'id="miscellaneous-links"' : 'id="xs-miscellaneous-links"' }>
-                            <li class="link">
-                                <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
-                            </li>
                             <li class="link">
                                 <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
                             </li>

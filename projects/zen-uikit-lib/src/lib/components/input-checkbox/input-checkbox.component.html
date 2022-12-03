@@ -1,0 +1,18 @@
+<div class="zen-input-checkbox"
+     [class.zen-input-checkbox--disabled]="disabled"
+     [class.zen-input-checkbox--html]="isHTML"
+     [ngClass]="additionalClasses"
+>
+  <input class="zen-form-checkbox" type="checkbox"
+         [id]="id"
+         [disabled]="disabled"
+         [(ngModel)]="value"
+         (click)="onClick(value)"
+  >
+  <label class="zen-input-checkbox__label"
+         [for]="id"
+  >
+    <ng-content></ng-content>
+  </label>
+</div>
+

@@ -1,0 +1,22 @@
+// Local settings
+$ui-assets: '../assets';
+
+$zen-header-height: 84px;
+$zen-header-height-small: 60px;
+$zen-footer-info-height: 60px;
+$zen-footer-links-height: 54px;
+$zen-headerFooterMaxWidth: 1024px;
+
+// Spaces
+$wt-base: 5px;
+$wt-base-2: 2*$wt-base;
+$wt-base-3: 3*$wt-base;
+$wt-base-4: 4*$wt-base;
+$wt-base-5: 5*$wt-base;
+
+// Viewports
+$wt-bp-xs: 600px;
+$wt-bp-tb: 768px;
+$wt-bp-sm: 960px;
+$wt-bp-md: 1280px;
+$wt-bp-lg: 1920px;

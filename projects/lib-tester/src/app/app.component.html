@@ -1,3 +1,4 @@
 <div [formGroup]="formGroup">
-    <zen-input-text type="text" [disabled]="true" small formControlName="field1" label="pippo" (keyupChange)="onAction($event)" [placeholder]="true"></zen-input-text>
+    <zen-input-text [disabled]="false" formControlName="field1" label="pippo" [additionalClasses]="['pippo']" (keyupChange)="onAction($event)" placeholder="place"></zen-input-text>
+    <zen-input-checkbox [disabled]="true" formControlName="field2">labbel text</zen-input-checkbox>
 </div>

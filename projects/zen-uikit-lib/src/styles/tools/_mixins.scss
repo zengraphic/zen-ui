@@ -23,3 +23,38 @@ $breakpoints:  (
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
 }
+
+@mixin generateSpacing($prefix, $property, $position, $spacing, $length) {
+  // Loop through all of the length
+  @for $i from 0 through $length {
+    // create the class
+    .#{$prefix}-#{$property}-#{$position}--#{$i} {
+      //crreate property with size
+      #{$property}-#{$position}: $spacing * $i;
+    }
+  }
+}
+
+/* use example  @include generateSpacing(zen, margin, top, 8px, 10); */
+
+// Animations
+@keyframes fade-in {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}
+
+@mixin zen-animation-fade-in {
+  animation: fade-in 0.2s ease-out;
+}

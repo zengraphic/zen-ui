@@ -4,6 +4,9 @@
     "types": [
       "node"
     ],
+    "paths": {
+      "zen-uikit-lib": ["projects/zen-uikit-lib/src/public-api"]
+    },
     "allowSyntheticDefaultImports": true
   },
   "exclude": [

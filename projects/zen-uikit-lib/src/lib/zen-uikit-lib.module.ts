@@ -4,14 +4,16 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { PortalModule } from '@angular/cdk/portal';
+import { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';
 
 
 const components = [
-  InputTextComponent
+  InputTextComponent,
+  InputCheckboxComponent
 ]
 @NgModule({
   declarations: [
-    ...components
+    ...components,
   ],
   imports: [
     CommonModule,

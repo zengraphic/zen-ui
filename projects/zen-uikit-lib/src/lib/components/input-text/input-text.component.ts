@@ -1,7 +1,15 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, ElementRef, forwardRef, Injector, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, forwardRef, Injector, Input, OnDestroy } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { InputBaseComponent } from '../input-base/input-base.component';
 
+const BUTTON_HOST_ATTRIBUTES_CLASS: any = {
+  'zen-small': 'zen-input--small',
+  'zen-medium': 'zen-input--medium'
+};
+const BUTTON_HOST_ATTRIBUTES: string[] = [
+  'zen-small',
+  'zen-medium'
+];
 @Component({
   selector: 'zen-input-text',
   templateUrl: './input-text.component.html',
@@ -15,21 +23,27 @@ import { InputBaseComponent } from '../input-base/input-base.component';
   }]
 })
 export class InputTextComponent extends InputBaseComponent implements ControlValueAccessor, AfterViewInit, OnDestroy {
-  @Input() disabled: boolean = false;
-  @Input() placeholder: boolean = false;
+  @Input() placeholder: string = '';
   @Input() type = 'text';
-  @Input() additionalClass: string[] = [];
 
-  @ViewChild('inputText', {static: true}) inputElement?: ElementRef;
-
-  inferredType = 'text';
   onTouched!: (val: any) => void;
   private innerValue: string = '';
-  private cleave: any;
   private onChange!: (val: any) => void;
 
   constructor(injector: Injector) {
     super(injector);
+  }
+
+  private static getClassFromHostAttribute(hostAttribute: string): string {
+    return BUTTON_HOST_ATTRIBUTES_CLASS[hostAttribute] || '';
+  }
+
+  private get hostElement() {
+    return this.elementRef.nativeElement;
+  }
+
+  private hasHostAttributes(...attributes: string[]): boolean {
+    return attributes.some(attribute => this.hostElement.hasAttribute(attribute));
   }
 
   get value(): any {
@@ -42,23 +56,9 @@ export class InputTextComponent extends InputBaseComponent implements ControlVal
 
   set value(obj: any) {
     if (obj !== this.innerValue) {
-      this.innerValue = this.sanitizeValue(obj);
+      this.innerValue = obj;
       this.onChange(this.innerValue);
       this.onTouched(this.innerValue);
-    }
-  }
-
-  private sanitizeValue(obj: any) {
-    if (!this.cleave) {
-      return obj;
-    }
-
-    switch (this.type) {
-      case 'numeric':
-        return (this.cleave.getRawValue() || '').replace(/[^0-9]/, '');
-      default: {
-        return this.cleave.getRawValue();
-      }
     }
   }
   
@@ -78,21 +78,10 @@ export class InputTextComponent extends InputBaseComponent implements ControlVal
 
   override ngAfterViewInit(): void {
     super.ngAfterViewInit();
-    switch (this.type) {
-      case 'email': {
-        this.inferredType = 'email';
-        break;
-      }
-      case 'password': {
-        this.inferredType = 'password';
-        break;
-      }
-      case 'hidden': {
-        this.inferredType = 'hidden';
-        break;
-      }
-      default: {
-        // Ignore
+    for (const attr of BUTTON_HOST_ATTRIBUTES) {
+      if (this.hasHostAttributes(attr)) {
+        const classFromAttribute = InputTextComponent.getClassFromHostAttribute(attr);
+        this.additionalClasses = [...this.additionalClasses, classFromAttribute ];
       }
     }
   }
