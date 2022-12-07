@@ -2,4 +2,18 @@
     &--hidden {
         display: none;
     }
+    &--password{
+        input {
+            padding-right: 40px;
+        }
+    }
+    &__preview {
+        position: absolute;
+        right: 8px;
+        bottom: 28px;
+        width: 24px;
+        height: 24px;
+        background-color: red;
+        cursor: pointer;
+    }
 }

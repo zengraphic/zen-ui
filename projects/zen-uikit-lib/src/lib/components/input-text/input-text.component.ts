@@ -25,6 +25,7 @@ const BUTTON_HOST_ATTRIBUTES: string[] = [
 export class InputTextComponent extends InputBaseComponent implements ControlValueAccessor, AfterViewInit, OnDestroy {
   @Input() placeholder: string = '';
   @Input() type = 'text';
+  @Input() showPreview: boolean = false;
 
   onTouched!: (val: any) => void;
   private innerValue: string = '';
@@ -53,7 +54,6 @@ export class InputTextComponent extends InputBaseComponent implements ControlVal
   get isFilled(): boolean {
     return Boolean(this.innerValue || this.placeholder);
   }
-
   set value(obj: any) {
     if (obj !== this.innerValue) {
       this.innerValue = obj;
@@ -84,6 +84,11 @@ export class InputTextComponent extends InputBaseComponent implements ControlVal
         this.additionalClasses = [...this.additionalClasses, classFromAttribute ];
       }
     }
+  }
+
+  togglePreview() {
+    this.type = this.type === 'password' ? 'text' : 'password' ;
+    // TOdO: add style for preview icon
   }
 
 }

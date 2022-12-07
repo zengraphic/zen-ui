@@ -1,9 +1,10 @@
-<div class="zen-input zen-input-text {{variationClass ? variationClass : ''}}"
+<div class="zen-input zen-input-text {{additionalClasses ? additionalClasses : ''}}"
      [class.zen-input--validate-on-blur]="validateOnBlur"
      [class.zen-input--focused]="isFocused"
      [class.zen-input-text--hidden]="type === 'hidden'"
      [class.zen-input-text--disabled]="disabled"
      [class.error]="isInvalid"
+     [class.zen-input-text--password]="showPreview"
 >
 <label class="zen-input__label"
 *ngIf="label"
@@ -24,6 +25,7 @@
          [(ngModel)]="value"
          #inputText
   />
+  <div class="zen-input-text__preview" (click)="togglePreview()" *ngIf="showPreview">-</div>
   <div class="zen-input__error" *ngIf="isInvalid && (!validateOnBlur || !isFocused)">
     {{errorMessage}}
   </div>

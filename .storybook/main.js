@@ -6,7 +6,9 @@ module.exports = {
   "addons": [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@storybook/addon-interactions"
+    "@storybook/addon-interactions",
+    '@storybook/preset-scss',
+    '@storybook/addon-a11y'
   ],
   "framework": "@storybook/angular",
   "core": {

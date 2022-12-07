@@ -42,7 +42,8 @@ export class AppComponent implements OnInit {
     
     this.formGroup = this.formBuilder.group({
       field1: ['',Validators.required],
-      field2: [true, Validators.required]
+      field2: [true, Validators.required],
+      field3: ['', Validators.required]
     })
   }
 

@@ -1,0 +1,93 @@
+.zen-input-radio {
+    &__input {
+      &:checked,
+      &:not(:checked) {
+        left: -9999px;
+        position: absolute;
+      }
+  
+      &:checked + label,
+      &:not(:checked) + label {
+        color: $black;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 1.4em;
+        padding-left: 28px;
+        position: relative;
+      }
+  
+      &:checked + label:before,
+      &:not(:checked) + label:before {
+        background: $white;
+        border-radius: 100%;
+        border: 2px solid $black;
+        content: '';
+        height: 24px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 24px;
+      }
+  
+      &:checked + label:after,
+      &:not(:checked) + label:after {
+        background: $primary;
+        border-radius: 100%;
+        content: '';
+        height: 16px;
+        left: 4px;
+        position: absolute;
+        top: 4px;
+        transition: all 0.2s ease;
+        width: 16px;
+      }
+  
+      &:not(:checked) + label:after {
+        opacity: 0;
+        transform: scale(0);
+      }
+  
+      &:checked + label:after {
+        opacity: 1;
+        transform: scale(1);
+      }
+  
+  
+      &:disabled {
+        pointer-events: none;
+  
+        + label {
+          color: $grey--light;
+          -webkit-text-fill-color: $grey--light; /* Override iOS / Android font color change */
+          -webkit-opacity: 1; /* Override iOS opacity change affecting text & background color */
+          opacity: 1;
+          cursor: default;
+  
+          &:before {
+            border-color: $grey--light;
+            color: $white;
+          }
+  
+          &:after {
+            background: $grey--light;
+          }
+        }
+      }
+    }
+    &--html {
+      .zen-input-radio__input {
+        &:checked + label:before,
+        &:not(:checked) + label:before {
+          display: none;
+        }
+        &:checked + label:after,
+        &:not(:checked) + label:after {
+          display: none;
+        }
+        & + label {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+  

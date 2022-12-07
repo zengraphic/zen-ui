@@ -1,0 +1,16 @@
+<div class="zen-input-radio"
+     [class.zen-input-radio--html]="isHTML"
+     [class.zen-input-radio--disabled]="disabled">
+  <input type="radio"
+         class="zen-input-radio__input"
+         [id]="id"
+         [name]="groupName"
+         [value]="value"
+         [disabled]="disabled"
+         [attr.aria-label]="ariaLabel ? ariaLabel : null"
+         [checked]="isChecked"
+         [(ngModel)]="modelValue">
+  <label class="zen-input-radio__label" [for]="id">
+    <ng-content></ng-content>
+  </label>
+</div>
