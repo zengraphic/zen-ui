@@ -1,8 +1,20 @@
+$white: #ffffff;
+
+$grey--50: #ececec; // lightest
+$grey--75: #b2b2b2; // lighter
+$grey--100: #939393; // more-light
+$grey--200: #646464; // light
+$grey--300: #444444; // regular
+$grey--400: #303030; // dark
+$grey--500: #292929; // darkest
+
+$black: #171717 !default;
+
 $bordeaux--50: #faecec; // lightest
 $bordeaux--75: #ebafb2; // lighter
 $bordeaux--100: #e38e92; // more-light
 $bordeaux--200: #d65e63; // light
-$bordeaux--300: #CE3D43;
+$bordeaux--300: #ce3d43;
 $bordeaux--400: #902b2f;
 $bordeaux--500: #7e2529;
 
@@ -14,37 +26,34 @@ $aqua--300: #37ceca;
 $aqua--400: #27908d;
 $aqua--500: #227e7b;
 
-
-$grey--50: #ececec; // lightest
-$grey--75: #b2b2b2; // lighter
-$grey--100: #939393; // more-light
-$grey--200: #646464; // light
-$grey--300: #444444; // regular
-$grey--400: #303030; // dark
-$grey--500: #292929; // darkest
-
-$black: #171717;
-$white: #ffffff;
-
 $grey: $grey--300;
 $grey--dark: $grey--400;
-$grey--light:$grey--75;
+$grey--light: $grey--75;
 
 $green: #37ce3f;
 
 $orange: #e9a437;
 
-$red: #DA0037;
+$red: #da0037;
 
 $primary: $bordeaux--300;
 $primary--dark: $bordeaux--400;
-$primary--light:$bordeaux--75;
+$primary--light: $bordeaux--75;
 
-$secondary:$aqua--300;
+$secondary: $aqua--300;
 
-$accent:$aqua--300;
+$accent: $aqua--300;
 
 $error: $red;
 $warning: $orange;
 $success: $green;
+
+// body
+$body-color: $grey--400 !default;
+$body-bg: $grey--50 !default;
+
+// Links
+
+$link-color: $primary !default;
+$link-hover-color: $bordeaux--400 !default;
 

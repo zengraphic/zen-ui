@@ -1,24 +1,14 @@
-$breakpoints:  (
-  "xs": 25em, // 400px
-  "sm": 34em, // 544px
-  "md": 48em, // 768px
-  "lg": 60em, // 960px
-  "xl": 80em, // 1280px
-  "xxl": 90em // 1440px
-);
- 
 @mixin respond-above($breakpoint) {
   // If the breakpoint exists in the map.
-  @if map-has-key($breakpoints, $breakpoint) {
+  @if map-has-key($grid-breakpoints, $breakpoint) {
     // Get the breakpoint value.
-    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    $breakpoint-value: map-get($grid-breakpoints, $breakpoint);
     // Write the media query.
     @media (min-width: $breakpoint-value) {
       @content;
     }
     // If the breakpoint doesn't exist in the map.
-  }
-  @else {
+  } @else {
     // Log a warning.
     @warn 'Invalid breakpoint: #{$breakpoint}.';
   }
@@ -57,4 +47,133 @@ $breakpoints:  (
 
 @mixin zen-animation-fade-in {
   animation: fade-in 0.2s ease-out;
+}
+
+@mixin make-row($gutter: $grid-gutter-width) {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-0.5 * $gutter);
+  margin-left: calc(-0.5 * $gutter);
+}
+
+@mixin make-col-ready() {
+  box-sizing: border-box;
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(
+    $grid-gutter-width * 0.5
+  ); // stylelint-disable-line function-disallowed-list
+  padding-left: calc(
+    $grid-gutter-width * 0.5
+  ); // stylelint-disable-line function-disallowed-list
+  margin-top: 0;
+}
+
+@mixin make-col($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto;
+    width: percentage(divide($size, $columns));
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+
+@mixin make-col-auto() {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+@mixin make-col-offset($size, $columns: $grid-columns) {
+  $num: divide($size, $columns);
+  margin-left: if($num == 0, 0, percentage($num));
+}
+
+@mixin row-cols($count) {
+  > * {
+    flex: 0 0 auto;
+    width: divide(100%, $count);
+  }
+}
+
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+  $breakpoint-value: map-get($breakpoints, $name);
+  @return if($breakpoint-value == null, "", "-#{$name}");
+}
+@function breakpoint($name, $max-widths: $container-max-widths) {
+  $breakpoint-value: map-get($max-widths, $name);
+  @return if($breakpoint-value == null, "", "#{$name}");
+}
+
+
+@mixin make-grid-columns(
+  $columns: $grid-columns,
+  $gutter: $grid-gutter-width,
+  $breakpoints: $grid-breakpoints
+) {
+  @each $breakpoint in map-keys($breakpoints) {
+    $infix: breakpoint-infix($breakpoint, $breakpoints);
+
+    @include respond-above($breakpoint) {
+      .col#{$infix} {
+        flex: 1 0 0%; // Flexbugs #4: https://github.com/philipwalton/flexbugs#flexbug-4
+      }
+      .row-cols#{$infix}-auto > * {
+        @include make-col-auto();
+      }
+
+      @if $grid-row-columns > 0 {
+        @for $i from 1 through $grid-row-columns {
+          .row-cols#{$infix}-#{$i} {
+            @include row-cols($i);
+          }
+        }
+      }
+
+      .col#{$infix}-auto {
+        @include make-col-auto();
+      }
+
+      @if $columns > 0 {
+        @for $i from 1 through $columns {
+          .col#{$infix}-#{$i} {
+            @include make-col($i, $columns);
+          }
+        }
+
+        // `$columns - 1` because offsetting by the width of an entire row isn't possible
+        @for $i from 0 through ($columns - 1) {
+          @if not($infix == "" and $i == 0) {
+            // Avoid emitting useless .offset-0
+            .offset#{$infix}-#{$i} {
+              @include make-col-offset($i, $columns);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin make-container($container-max-widths: $container-max-widths) {
+  .container {
+    width: 100%;
+    padding-right: calc($grid-gutter-width * .5); // stylelint-disable-line function-disallowed-list
+    padding-left: calc($grid-gutter-width * .5); // stylelint-disable-line function-disallowed-list
+    margin-right: auto;
+    margin-left: auto;
+    @each $container-max-width in map-keys($container-max-widths) {
+      $breakpoint: breakpoint($container-max-width, $container-max-widths);
+      $breakpoint-value: map-get($container-max-widths, $container-max-width);
+
+      @include respond-above($breakpoint) {
+        max-width: $breakpoint-value;
+      }
+    }
+    &.fluid {
+      max-width: none;
+    }
+  }
+  
 }
