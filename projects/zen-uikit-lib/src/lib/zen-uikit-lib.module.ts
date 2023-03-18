@@ -15,7 +15,9 @@ const components = [
 ]
 @NgModule({
   declarations: [
-    ...components
+    InputTextComponent,
+  InputCheckboxComponent,
+  InputRadioComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,9 @@ const components = [
 
   ],
   exports: [
-    ...components,
+    InputTextComponent,
+  InputCheckboxComponent,
+  InputRadioComponent,
   ]
 })
 export class ZenUikitLibModule { }

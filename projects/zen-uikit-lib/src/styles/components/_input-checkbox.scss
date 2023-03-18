@@ -1,4 +1,4 @@
-$checkbox-height: 24px;
+$checkbox-height: 20px;
 .zen-input-checkbox {
   display: flex;
   .zen-form-checkbox {
@@ -46,12 +46,12 @@ $checkbox-height: 24px;
       border-bottom: 2px solid $white;
       border-left: 2px solid $white;
       content: "";
-      height: 12px;
+      height: 8px;
       left: 6px;
       position: absolute;
-      top: 6px;
+      top: 8px;
       transform: rotate(-45deg);
-      width: 20px;
+      width: 16px;
     }
     // Disabled state label.
     &:disabled {

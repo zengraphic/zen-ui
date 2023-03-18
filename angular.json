@@ -35,7 +35,8 @@
           "options": {
             "main": "projects/zen-uikit-lib/src/test.ts",
             "tsConfig": "projects/zen-uikit-lib/tsconfig.spec.json",
-            "karmaConfig": "projects/zen-uikit-lib/karma.conf.js"
+            "karmaConfig": "projects/zen-uikit-lib/karma.conf.js",
+            "codeCoverage": true
           }
         },
         "storybook": {

@@ -59,15 +59,18 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                                 <a href="modules/ZenUikitLibModule.html" data-type="entity-link" >ZenUikitLibModule</a>
                                     <li class="chapter inner">
                                         <div class="simple menu-toggler" data-toggle="collapse" ${ isNormalMode ?
-                                            'data-target="#components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' : 'data-target="#xs-components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' }>
+                                            'data-target="#components-links-module-ZenUikitLibModule-323dd7f2be42b550360ee984ac1edd21565bf78c5f1067f41f0c02c99021e09298d8d2770db6ced2e95ab696cb83830ad93359035b1faac8981cc8dde0902759"' : 'data-target="#xs-components-links-module-ZenUikitLibModule-323dd7f2be42b550360ee984ac1edd21565bf78c5f1067f41f0c02c99021e09298d8d2770db6ced2e95ab696cb83830ad93359035b1faac8981cc8dde0902759"' }>
                                             <span class="icon ion-md-cog"></span>
                                             <span>Components</span>
                                             <span class="icon ion-ios-arrow-down"></span>
                                         </div>
-                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' :
-                                            'id="xs-components-links-module-ZenUikitLibModule-e4638e721da49e0d82487d45b5108b03aad50a09cd0c93dd4054813647817a0f00ed37aa94ee1d57cf3c2f85e3576350f3bbf4f917ab873fed4500586f7d2a1d"' }>
+                                        <ul class="links collapse" ${ isNormalMode ? 'id="components-links-module-ZenUikitLibModule-323dd7f2be42b550360ee984ac1edd21565bf78c5f1067f41f0c02c99021e09298d8d2770db6ced2e95ab696cb83830ad93359035b1faac8981cc8dde0902759"' :
+                                            'id="xs-components-links-module-ZenUikitLibModule-323dd7f2be42b550360ee984ac1edd21565bf78c5f1067f41f0c02c99021e09298d8d2770db6ced2e95ab696cb83830ad93359035b1faac8981cc8dde0902759"' }>
                                             <li class="link">
                                                 <a href="components/InputCheckboxComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >InputCheckboxComponent</a>
+                                            </li>
+                                            <li class="link">
+                                                <a href="components/InputRadioComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >InputRadioComponent</a>
                                             </li>
                                             <li class="link">
                                                 <a href="components/InputTextComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules" >InputTextComponent</a>
@@ -105,12 +108,6 @@ customElements.define('compodoc-menu', class extends HTMLElement {
                     </li>
                     <li class="chapter">
                         <a data-type="chapter-link" href="coverage.html"><span class="icon ion-ios-stats"></span>Documentation coverage</a>
-                    </li>
-                    <li class="divider"></li>
-                    <li class="copyright">
-                        Documentation generated using <a href="https://compodoc.app/" target="_blank">
-                            <img data-src="images/compodoc-vectorise.png" class="img-responsive" data-type="compodoc-logo">
-                        </a>
                     </li>
             </ul>
         </nav>

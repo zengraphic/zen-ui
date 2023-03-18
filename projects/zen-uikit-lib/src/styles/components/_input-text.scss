@@ -1,19 +1,22 @@
 .zen-input-text {
-    &--hidden {
-        display: none;
+  &--hidden {
+    display: none;
+  }
+  &--password {
+    input {
+      padding-right: 40px;
     }
-    &--password{
-        input {
-            padding-right: 40px;
-        }
+  }
+  &__preview {
+    position: absolute;
+    right: 8px;
+    bottom: 32px;
+    width: 24px;
+    height: 24px;
+    background: url("#{$ui-assets}/icons/icon-preview.svg");
+    cursor: pointer;
+    &.hide {
+      background: url("#{$ui-assets}/icons/icon-preview.svg");
     }
-    &__preview {
-        position: absolute;
-        right: 8px;
-        bottom: 28px;
-        width: 24px;
-        height: 24px;
-        background-color: red;
-        cursor: pointer;
-    }
+  }
 }
