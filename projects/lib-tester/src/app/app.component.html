@@ -1,5 +1,5 @@
-<div class="container">
-    <div class="row flex-align-center" [formGroup]="formGroup">
+<div class="container" [formGroup]="formGroup">
+    <div class="row flex-align-center">
         <div class="col-sm-4">
             <zen-input-text [disabled]="false" [showPreview]="true" formControlName="field1" label="pippo"
                 [additionalClasses]="['pippo']" (keyupChange)="onAction($event)" type="password"
@@ -14,14 +14,16 @@
             <zen-input-radio [disabled]="false" formControlName="field3">labbel text</zen-input-radio>
         </div>
     </div>
-</div>
-
-<div class="container">
     <div class="row flex-align-center">
-        <div class="offset-sm-4 col-sm-4"><zen-input-checkbox [disabled]="false" formControlName="field2">labbel
+        <div class="col-sm-4"><zen-input-checkbox [disabled]="false" formControlName="field2">labbel
                 text</zen-input-checkbox></div>
         <div class="col-sm-4">
             <zen-button zen-accent label="pippo"></zen-button>
+        </div>
+        <div class="col-sm-4">
+            <zen-input-select formControlName="selectfield" [isMultiSelect]="true" [placeholder]="'Seleziona'"
+                bindLabel="name" bindValue="id" label="Ciao label" [items]="documentTypes">
+            </zen-input-select>
         </div>
     </div>
 </div>

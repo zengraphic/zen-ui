@@ -7,12 +7,15 @@ import { PortalModule } from '@angular/cdk/portal';
 import { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';
 import { InputRadioComponent } from './components/input-radio/input-radio.component';
 import { ButtonComponent } from './components/button/button.component';
+import { InputSelectComponent } from './components/input-select/input-select.component';
+import { NgSelectModule } from '@ng-select/ng-select';
 
 const components = [
   InputTextComponent,
   InputCheckboxComponent,
   InputRadioComponent,
   ButtonComponent,
+  InputSelectComponent,
 ];
 @NgModule({
   declarations: [...components],
@@ -24,6 +27,7 @@ const components = [
     ReactiveFormsModule,
     OverlayModule,
     PortalModule,
+    NgSelectModule,
   ],
   exports: [...components],
 })

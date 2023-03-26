@@ -1,0 +1,14 @@
+<div class="zen-input zen-input-select" [class.zen-input-select--disabled]="disabled">
+    <label class="zen-input__label zen-input-select__label" *ngIf="label" [for]="id">
+        {{label}}
+    </label>
+    <ng-select [class.zen-input__input--filled]="isFilled" [id]="id" [items]="items" [searchable]="false"
+        [multiple]="isMultiSelect" [bindValue]="bindValue" [bindLabel]="bindLabel" [placeholder]="placeholder"
+        [maxSelectedItems]="selectionLimitt" [isOpen]="isOpen" [clearable]="false" (focus)="onFocus()"
+        dropdownPosition="bottom">
+    </ng-select>
+
+    <div class="zen-input__error" *ngIf="isInvalid">
+        {{errorMessage}}
+    </div>
+</div>

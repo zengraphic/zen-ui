@@ -36,7 +36,10 @@ export class AppComponent implements OnInit {
       health: 5,
     },
   ];
-
+  documentTypes: any[] = [
+    { id: 'id', name: 'Carta di identità' },
+    { id: 'passport', name: 'Passaporto' },
+  ];
   public formGroup: FormGroup;
 
   constructor(private formBuilder: FormBuilder) {}
@@ -47,6 +50,7 @@ export class AppComponent implements OnInit {
       field2: [true, Validators.required],
       field3: ['', Validators.required],
       field4: ['pippopop'],
+      selectfield: [],
     });
   }
 
