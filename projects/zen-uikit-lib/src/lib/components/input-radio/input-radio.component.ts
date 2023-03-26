@@ -1,25 +1,38 @@
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { ChangeDetectionStrategy, Component, OnInit, Injector, forwardRef, AfterViewInit, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  OnInit,
+  Injector,
+  forwardRef,
+  AfterViewInit,
+  Input,
+} from '@angular/core';
 import { InputBaseComponent } from '../input-base/input-base.component';
 
 @Component({
   selector: 'zen-input-radio',
   templateUrl: './input-radio.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [{
-    provide: NG_VALUE_ACCESSOR,
-    useExisting: forwardRef(() => InputRadioComponent),
-    multi: true
-  }]
+  providers: [
+    {
+      provide: NG_VALUE_ACCESSOR,
+      useExisting: forwardRef(() => InputRadioComponent),
+      multi: true,
+    },
+  ],
 })
-export class InputRadioComponent extends InputBaseComponent implements ControlValueAccessor, AfterViewInit {
+export class InputRadioComponent
+  extends InputBaseComponent
+  implements ControlValueAccessor, AfterViewInit
+{
   @Input() groupName: string;
   @Input() value: any;
   @Input() isHTML: boolean;
   constructor(injector: Injector) {
     super(injector);
   }
-  
+
   onTouched: (val: any) => void;
   onChange: (val: any) => void;
   innerValue: string;

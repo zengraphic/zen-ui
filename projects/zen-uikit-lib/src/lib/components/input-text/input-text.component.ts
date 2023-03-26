@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component, forwardRef, Injector, Input, OnDestroy } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, forwardRef, Injector, Input, OnDestroy, OnInit } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { InputBaseComponent } from '../input-base/input-base.component';
 

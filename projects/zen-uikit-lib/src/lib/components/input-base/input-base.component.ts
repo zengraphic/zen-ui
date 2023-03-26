@@ -9,6 +9,7 @@ import {
   Type,
   ElementRef,
   OnInit,
+  AfterViewInit,
 } from '@angular/core';
 import { FormControl, NgControl } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
@@ -27,7 +28,7 @@ import { INPUT_BASE_ERROR_PREFIX } from '../../models/input.model';
  * @implements {OnDestroy}
  */
 @Component({ template: '' })
-export abstract class InputBaseComponent implements OnInit, OnDestroy {
+export abstract class InputBaseComponent implements AfterViewInit, OnDestroy {
   /**
    * setS the disabled state
    */
@@ -66,13 +67,17 @@ export abstract class InputBaseComponent implements OnInit, OnDestroy {
 
   protected constructor(protected injector: Injector) {}
 
-  ngOnInit(): void {
+  ngAfterViewInit(): void {
     this.setFormControl();
     this.setInjectedServices();
   }
 
   ngOnDestroy() {
     this.subscriptions.unsubscribe();
+  }
+
+  get inferredClasses(): string {
+    return this.additionalClasses.join(' ');
   }
 
   get errorMessage(): string {

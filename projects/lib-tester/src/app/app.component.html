@@ -1,20 +1,27 @@
-<div [formGroup]="formGroup">
-    <zen-input-text [disabled]="false" [showPreview]="true" formControlName="field1" label="pippo" [additionalClasses]="['pippo']" (keyupChange)="onAction($event)" type="password" placeholder="place"></zen-input-text>
-    <zen-input-checkbox [disabled]="true" formControlName="field2">labbel text</zen-input-checkbox>
-    <zen-input-radio [disabled]="true" formControlName="field3">labbel text</zen-input-radio>
-</div>
-
 <div class="container">
-    <div class="row">
-        <div class="col-sm-4">a</div>
-        <div class="col-sm-4">b</div>
-        <div class="col-sm-4">c</div>
+    <div class="row flex-align-center" [formGroup]="formGroup">
+        <div class="col-sm-4">
+            <zen-input-text [disabled]="false" [showPreview]="true" formControlName="field1" label="pippo"
+                [additionalClasses]="['pippo']" (keyupChange)="onAction($event)" type="password"
+                placeholder="place"></zen-input-text>
+        </div>
+        <div class="col-sm-4">
+            <zen-input-text [disabled]="false" [showPreview]="true" formControlName="field1" label="pippo"
+                [additionalClasses]="['pippo']" (keyupChange)="onAction($event)" type="password"
+                placeholder="place"></zen-input-text>
+        </div>
+        <div class="col-sm-4">
+            <zen-input-radio [disabled]="false" formControlName="field3">labbel text</zen-input-radio>
+        </div>
     </div>
 </div>
 
-<div class="container fluid">
-    <div class="row">
-        <div class="offset-sm-4 col-sm-4">a</div>
-        <div class="col-sm-4">b</div>
+<div class="container">
+    <div class="row flex-align-center">
+        <div class="offset-sm-4 col-sm-4"><zen-input-checkbox [disabled]="false" formControlName="field2">labbel
+                text</zen-input-checkbox></div>
+        <div class="col-sm-4">
+            <zen-button zen-accent label="pippo"></zen-button>
+        </div>
     </div>
 </div>

@@ -51,6 +51,7 @@
 
 @mixin make-row($gutter: $grid-gutter-width) {
   display: flex;
+  flex: 0 1 auto;
   flex-wrap: wrap;
   margin-right: calc(-0.5 * $gutter);
   margin-left: calc(-0.5 * $gutter);
@@ -107,7 +108,6 @@
   @return if($breakpoint-value == null, "", "#{$name}");
 }
 
-
 @mixin make-grid-columns(
   $columns: $grid-columns,
   $gutter: $grid-gutter-width,
@@ -160,8 +160,12 @@
 @mixin make-container($container-max-widths: $container-max-widths) {
   .container {
     width: 100%;
-    padding-right: calc($grid-gutter-width * .5); // stylelint-disable-line function-disallowed-list
-    padding-left: calc($grid-gutter-width * .5); // stylelint-disable-line function-disallowed-list
+    padding-right: calc(
+      $grid-gutter-width * 0.5
+    ); // stylelint-disable-line function-disallowed-list
+    padding-left: calc(
+      $grid-gutter-width * 0.5
+    ); // stylelint-disable-line function-disallowed-list
     margin-right: auto;
     margin-left: auto;
     @each $container-max-width in map-keys($container-max-widths) {
@@ -176,5 +180,4 @@
       max-width: none;
     }
   }
-  
 }

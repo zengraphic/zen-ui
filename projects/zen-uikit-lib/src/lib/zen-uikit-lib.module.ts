@@ -6,19 +6,16 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { PortalModule } from '@angular/cdk/portal';
 import { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';
 import { InputRadioComponent } from './components/input-radio/input-radio.component';
-
+import { ButtonComponent } from './components/button/button.component';
 
 const components = [
   InputTextComponent,
   InputCheckboxComponent,
-  InputRadioComponent
-]
+  InputRadioComponent,
+  ButtonComponent,
+];
 @NgModule({
-  declarations: [
-    InputTextComponent,
-  InputCheckboxComponent,
-  InputRadioComponent
-  ],
+  declarations: [...components],
   imports: [
     CommonModule,
 
@@ -26,13 +23,8 @@ const components = [
     FormsModule,
     ReactiveFormsModule,
     OverlayModule,
-    PortalModule
-
+    PortalModule,
   ],
-  exports: [
-    InputTextComponent,
-  InputCheckboxComponent,
-  InputRadioComponent,
-  ]
+  exports: [...components],
 })
-export class ZenUikitLibModule { }
+export class ZenUikitLibModule {}
