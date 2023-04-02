@@ -2,10 +2,19 @@
     <label class="zen-input__label zen-input-select__label" *ngIf="label" [for]="id">
         {{label}}
     </label>
-    <ng-select [class.zen-input__input--filled]="isFilled" [id]="id" [items]="items" [searchable]="false"
+    <ng-select [class.zen-input__input--filled]="isFilled" [id]="id" [items]="items" [searchable]="isSearchable"
         [multiple]="isMultiSelect" [bindValue]="bindValue" [bindLabel]="bindLabel" [placeholder]="placeholder"
-        [maxSelectedItems]="selectionLimitt" [isOpen]="isOpen" [clearable]="false" (focus)="onFocus()"
+        [maxSelectedItems]="selectionLimit" [isOpen]="isOpen" [clearable]="false" (focus)="onFocus()"
         dropdownPosition="bottom">
+        <ng-template ng-multi-label-tmp let-items="items" let-clear="clear">
+            <div class="ng-value" *ngFor="let item of items | slice:0:maximumVisible">
+                <span class="ng-value-icon left" (click)="clear(item)" aria-hidden="true">×</span>
+                <span class="ng-value-label">{{getItemValue(item)}}</span>
+            </div>
+            <div class="ng-value" *ngIf="items.length > maximumVisible">
+                <span class="ng-value-label">{{items.length - maximumVisible}} more...</span>
+            </div>
+        </ng-template>
     </ng-select>
 
     <div class="zen-input__error" *ngIf="isInvalid">

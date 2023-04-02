@@ -35,13 +35,18 @@ export class InputSelectComponent
   @Input() isOpen: boolean;
   @Input() items: any[];
   @Input() placeholder = '';
+  @Input() isSearchable: boolean = false;
   @Input() isMultiSelect: boolean = false;
-  @Input() selectionLimitt: number;
+  @Input() selectionLimit: number;
+  @Input() maximumVisible: number =1;
   constructor(injector: Injector) {
     super(injector);
   }
   get isFilled(): boolean {
     return Boolean(this.formControl && this.formControl.value);
+  }
+  getItemValue(item: any) {
+    return item[this.bindLabel];
   }
   writeValue(obj: any): void {
     this.ngSelectComponentRef.writeValue(obj);

@@ -1,5 +1,4 @@
 .zen-input-select {
-  cursor: pointer;
   .ng-select {
     .ng-arrow-wrapper {
       // background: $theme-selectArrowDown;
@@ -13,6 +12,20 @@
       &.ng-select .ng-arrow-wrapper {
         // background: $theme-selectArrowUp;
       }
+    }
+
+    .ng-value-container {
+      position: relative;
+      padding-bottom: 8px;
+      padding-left: 8px;
+      //padding: 10px;
+    }
+    &-container {
+      height: 48px;
+      font-size: 1rem;
+      border-color: $black;
+      border-bottom: 2px solid $black;
+      border-radius: 0;
     }
 
     /*   .ng-value-container {

@@ -114,7 +114,7 @@
   }
 
   &.ng-select-focused,
-  &.wt-input__input--filled {
+  &.zen-input__input--filled {
     .ng-select-container {
       .ng-value-container {
         .ng-input > input,
@@ -122,29 +122,78 @@
         .ng-value {
           color: $black;
         }
+        .ng-value {
+          background-color: $grey--50;
+          border-radius: 4px;
+          margin-right: 5px;
+          &.ng-value-disabled {
+            background-color: lighten($color: $grey--50, $amount: 20);
+            .ng-value-label {
+              padding-left: 5px;
+            }
+          }
+          &-label {
+            display: inline-block;
+            padding: 8px;
+            //testing ellipsis
+            max-width: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .ng-value-icon {
+            padding: 8px;
+            border-right: 1px solid $grey--100;
+            &:hover {
+              color: $primary;
+            }
+          }
+        }
       }
     }
   }
 }
 
-.ng-option {
-  background-color: $white;
-}
-
-.ng-option-label {
-  //@extend .wt-text-base-m;
-}
-
 .ng-dropdown-panel {
   // OLD: border: 1px solid #ccc;
   //box-shadow: $theme-selectDropdownBoxShadow;
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2);
   border: 1px solid $grey--100;
 
   &.ng-select-bottom {
     // OLD: border-top-color: #e6e6e6;
+    padding: 6px;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     border-top-color: $black;
+  }
+  .ng-option {
+    background-color: $white;
+    line-height: 3em;
+    min-height: 3em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    text-decoration: none;
+    position: relative;
+    &:hover,
+    &.ng-option-selected {
+      background: $grey--50;
+      color: $grey--300;
+    }
+    .ng-option-label {
+      //@extend .wt-text-base-m;
+      font-size: 1rem;
+      line-height: 18px;
+      /* &.ng-option-marked {
+        background: rgba(0, 0, 0, 0.04);
+        color: $black;
+      } */
+
+      &.ng-option-disabled {
+        color: $grey--200;
+      }
+    }
   }
 }
 
